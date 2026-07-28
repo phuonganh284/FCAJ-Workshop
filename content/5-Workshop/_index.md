@@ -11,9 +11,9 @@ Workshop: Cloud Web Infrastructure Deployment and Authentication Security Setup 
 
 ### Content
 
-1. [Introduction](5.1-Introduction/)
-2. [Prerequisite](5.2-Prerequisite/)
-3. [Implementation Steps](5.3-implementation-steps/)
-4. [Test Results & Experimentation](5.4-test-results--experimentation/)
-5. [Clean Up](5.5-clean-up/)
-6. [Difficulties & Development Direction](5.6-difficulties--development-direction/)
+1. [Introduction](5.1-Workshop-overview/)
+2. [Prerequisite](5.2-Prerequiste/)
+3. [Implementation Steps](5.3-S3-vpc/)
+4. [Test Results & Experimentation](5.4-S3-onprem/)
+5. [Clean Up](5.6-Cleanup/)
+6. [Difficulties & Development Direction](5.6-Cleanup/)

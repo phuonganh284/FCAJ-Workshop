@@ -6,7 +6,7 @@ chapter: false
 pre: " <b> 6. </b> "
 ---
 
-Trong suốt thời gian thực tập tại **First Cloud AI Journey** từ **01/06/2026** đến **31/07/2026**, em đã có cơ hội vận dụng kiến thức về điện toán đám mây và phát triển phần mềm vào môi trường làm việc thực tế. em tham gia phát triển và triển khai dự án **Tracker Maintenance** – một hệ thống quản lý bảo trì được xây dựng trên nền tảng Amazon Web Services (AWS) với kiến trúc **Multi-tier** và cơ chế xác thực **JWT Authentication**.
+Trong suốt thời gian thực tập tại **First Cloud AI Journey** từ **01/06/2026** đến **31/07/2026**, em đã có cơ hội vận dụng kiến thức về điện toán đám mây và phát triển phần mềm vào môi trường làm việc thực tế. em tham gia phát triển và triển khai dự án **Tracker Maintenance** - một hệ thống quản lý bảo trì được xây dựng trên nền tảng Amazon Web Services (AWS) với kiến trúc **Multi-tier** và cơ chế xác thực **JWT Authentication**.
 
 Trong quá trình thực hiện dự án, em tham gia tích hợp giao diện Frontend của hệ thống, cấu hình các dịch vụ AWS và triển khai các thành phần của ứng dụng lên môi trường Cloud. Thông qua đó, em đã nâng cao kiến thức và kỹ năng về điện toán đám mây, hạ tầng AWS, triển khai hệ thống, xử lý sự cố, xây dựng tài liệu kỹ thuật, cũng như kỹ năng làm việc nhóm và giao tiếp trong môi trường dự án.
 

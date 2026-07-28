@@ -11,15 +11,15 @@ chapter: false
 ### Student Information:
 &emsp; **Full Name:** Nguyen Hoang Phuong Anh
 
-&emsp; **Phone Number:** 0989888999 
+&emsp; **Phone Number:** 0919903010
 
 &emsp; **Email:** anh.nguyenhoang78@hcmut.edu.vn
 
 &emsp; **University:** Ho Chi Minh City University of Technology
 
-&emsp; **Major:** Information Technology
+&emsp; **Major:** Computer Science
 
-&emsp; **Class:** AWS082025
+&emsp; **Class:** AWS062026
 
 &emsp; **Internship Company:** Amazon Web Services Viet Nam Company Limited
 

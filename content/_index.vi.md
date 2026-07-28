@@ -9,15 +9,15 @@ chapter: false
 ### Thông tin sinh viên:
 &emsp; **Họ và tên:** Nguyễn Hoàng Phương Anh 
 
-&emsp; **Số điện thoại:** 0989888999
+&emsp; **Số điện thoại:** 0919903010
 
 &emsp; **Email:** anh.nguyenhoang78@hcmut.edu.vn
 
 &emsp; **Trường:** Đại học Bách Khoa TP.HCM
 
-&emsp; **Ngành:** Công nghệ thông tin
+&emsp; **Ngành:** Computer Science
 
-&emsp; **Lớp:** AWS082025
+&emsp; **Lớp:** AWS062026
 
 &emsp; **Công ty thực tập:** Công ty TNHH Amazon Web Services Viet Nam
 

@@ -80,4 +80,4 @@ Mô hình AI Gateway cân bằng tốt giữa developer experience và enterpris
   https://github.com/aws-samples/amazon-api-gateway-ai-gateway-pattern
   
 
-<img src="/AWS_PhuongAnh/images/Blogs/blog1.png" alt="Blog 1" width="1000" />
+<img src="/FCAJ-Workshop/images/Blogs/blog1.png" alt="Blog 1" width="1000" />

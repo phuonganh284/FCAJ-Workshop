@@ -69,4 +69,4 @@ The meetup provided valuable insights into both technical topics and career deve
 
 ### Event Photos
 
-![Event Photo](/FCAJ-Workshop/images/event2.png) 
+<img src="/FCAJ-Workshop/images/event2.png" alt="event" width="250" />

@@ -55,4 +55,4 @@ Sự kiện giúp em mở rộng hiểu biết về cách các dịch vụ AWS c
 
 ### Hình ảnh sự kiện
 
-![Hình ảnh sự kiện](/FCAJ-Workshop/images/event2.png) 
+<img src="/FCAJ-Workshop/images/event1.png" alt="event" width="500" />

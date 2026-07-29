@@ -69,4 +69,4 @@ Buổi Meetup không chỉ mang đến nhiều kiến thức chuyên môn mà c�
 
 ### Hình ảnh sự kiện
 
-![Hình ảnh sự kiện](/FCAJ-Workshop/images/event2.png) 
+<img src="/FCAJ-Workshop/images/event2.png" alt="event" width="500" />

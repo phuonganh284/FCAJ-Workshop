@@ -64,4 +64,4 @@ This meetup provided a valuable opportunity to learn directly from industry prof
 
 ### Event Photos
 
-*Add event photos here.*
+<img src="/FCAJ-Workshop/images/event1.png" alt="event" width="500" />

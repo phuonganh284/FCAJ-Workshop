@@ -29,7 +29,7 @@ Tải xuống tệp **.csv** chứa các thông tin này và lưu trữ ở nơi
 
 <div style="text-align: center; margin: 20px 0;">
 
-![IAM Security Credentials](/images/iam.png)
+![IAM Security Credentials](/FCAJ-Workshop/images/iam.png)
 
 <div style="font-weight: bold; margin-top: 8px; color: #555;">Hình 2. Trang Security credentials của IAM User trong AWS IAM.</div>
 

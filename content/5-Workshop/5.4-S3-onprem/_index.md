@@ -17,14 +17,14 @@ After finalizing the isolated network infrastructure and Serverless configuratio
 
 Provisioned a new account for a Maintenance Technician on the internal management application.
 
-![Cognito Registration Flow](/images/5-Workshop/5.4-Test_Results_Experimentation/tracker-cognito-auth.png?classes=shadow)
+![Cognito Registration Flow](/FCAJ-Workshop/images/5-Workshop/5.4-Test_Results_Experimentation/tracker-cognito-auth.png?classes=shadow)
 
 > [!WARNING]
 > Image illustrating the account creation and authorization function for Maintenance Technicians
 
 The AWS Cognito system correctly registered the new technician and automatically dispatched temporary login credentials via email. The technician logged in for the first time, changed the password, and the account status transitioned to "Confirmed," granting access to the maintenance dashboard.
 
-![Cognito Users Management](/images/5-Workshop/5.4-Test_Results_Experimentation/tracker-cognito-users.png?classes=shadow)
+![Cognito Users Management](/FCAJ-Workshop/images/5-Workshop/5.4-Test_Results_Experimentation/tracker-cognito-users.png?classes=shadow)
 
 > [!WARNING]
 > Management interface of the Maintenance Technician account list and authentication status on the AWS Cognito User Pool
@@ -39,7 +39,7 @@ Upon receiving the link, the ESP32's Wi-Fi module executed an HTTP PUT request t
 
 Accessing the S3 Console verified that the device's log file was automatically categorized into the correct date folder with the exact file size, proving that the internal VPC secure connection flow operated with 100% success.
 
-![S3 Log Upload Success](/images/5-Workshop/5.4-Test_Results_Experimentation/tracker-s3-upload.png?classes=shadow)
+![S3 Log Upload Success](/FCAJ-Workshop/images/5-Workshop/5.4-Test_Results_Experimentation/tracker-s3-upload.png?classes=shadow)
 
 > [!WARNING]
 > Image of the ESP32 hardware diagnostic log file securely uploaded to the S3 system
@@ -52,7 +52,7 @@ As soon as the data was received, CloudWatch Log Groups immediately recorded the
 
 The system instantly transitioned into the ALARM state. In under 30 seconds, an urgent maintenance request notification email from Amazon SNS was directly dispatched to the administrative inbox, including the ID of the failing device. This proves that the proactive monitoring and automated maintenance alert flow operates exactly as designed.
 
-![CloudWatch Alarm Triggered](/images/5-Workshop/5.4-Test_Results_Experimentation/tracker-cloudwatch-alarm.png?classes=shadow)
+![CloudWatch Alarm Triggered](/FCAJ-Workshop/images/5-Workshop/5.4-Test_Results_Experimentation/tracker-cloudwatch-alarm.png?classes=shadow)
 
 > [!WARNING]
 > Emergency alert triggered on CloudWatch, dispatching a maintenance coordination email for the faulty device

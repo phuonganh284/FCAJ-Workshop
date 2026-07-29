@@ -21,7 +21,7 @@ Bước đầu tiên là xây dựng hạ tầng mạng nhằm tách biệt các
 
 <div style="text-align:center; margin:20px 0;">
 
-![VPC Resource Map](/images/vpcs.png)
+![VPC Resource Map](/FCAJ-Workshop/images/vpcs.png)
 
 <div style="font-weight:bold; margin-top:8px; color:#555;">Hình 3. Sơ đồ tài nguyên Amazon VPC.</div>
 
@@ -42,7 +42,7 @@ Cấu hình **Security Group** của cơ sở dữ liệu như sau:
 
 <div style="text-align:center; margin:20px 0;">
 
-![Amazon RDS Status](/images/rds.png)
+![Amazon RDS Status](/FCAJ-Workshop/images/rds.png)
 
 <div style="font-weight:bold; margin-top:8px; color:#555;">Hình 4. Trạng thái của Amazon RDS.</div>
 
@@ -65,7 +65,7 @@ Triển khai một máy chủ **Amazon EC2** trong Public Subnet và:
 
 <div style="text-align:center; margin:20px 0;">
 
-![Amazon EC2 Configuration](/images/ec2.png)
+![Amazon EC2 Configuration](/FCAJ-Workshop/images/ec2.png)
 
 <div style="font-weight:bold; margin-top:8px; color:#555;">Hình 5. Cấu hình máy chủ Amazon EC2.</div>
 
@@ -83,7 +83,7 @@ Tạo một **Amazon S3 Bucket** để lưu trữ hình ảnh và tài liệu b�
 
 <div style="text-align:center; margin:20px 0;">
 
-![Amazon S3 Configuration](/images/s3.png)
+![Amazon S3 Configuration](/FCAJ-Workshop/images/s3.png)
 
 <div style="font-weight:bold; margin-top:8px; color:#555;">Hình 6. Cấu hình Amazon S3 Bucket.</div>
 
@@ -106,7 +106,7 @@ CloudWatch hỗ trợ nhóm phát triển:
 
 <div style="text-align:center; margin:20px 0;">
 
-![CloudWatch Logs](/images/cloudwatch.png)
+![CloudWatch Logs](/FCAJ-Workshop/images/cloudwatch.png)
 
 <div style="font-weight:bold; margin-top:8px; color:#555;">Hình 7. Giám sát nhật ký bằng Amazon CloudWatch.</div>
 

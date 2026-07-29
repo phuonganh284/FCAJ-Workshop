@@ -48,7 +48,7 @@ Toàn bộ hạ tầng được triển khai tại khu vực **ap-southeast-2 (S
 - **Route 53 & ACM / Private CA:** Quản lý tên miền và chứng chỉ SSL/TLS để đảm bảo kết nối an toàn.
 - **Amazon Bedrock:** Tích hợp trí tuệ nhân tạo nhằm hỗ trợ phân tích dữ liệu bảo trì.
 
-![Kiến trúc hệ thống](/images/AWS_Architecture.png)
+![Kiến trúc hệ thống](/FCAJ-Workshop/images/AWS_Architecture.png)
 **Luồng dữ liệu chính:**
 
 - **Luồng xử lý nghiệp vụ:** Người dùng gửi yêu cầu thông qua giao diện Frontend, dữ liệu được chuyển đến máy chủ Spring Boot trên Amazon EC2 và truy vấn thông tin từ cơ sở dữ liệu Amazon RDS nằm trong vùng mạng riêng.

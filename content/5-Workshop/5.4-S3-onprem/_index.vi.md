@@ -17,14 +17,14 @@ Sau khi hoàn tất cấu hình cơ sở hạ tầng mạng cô lập và hệ t
 
 Thực hiện cấp tài khoản cho Kỹ thuật viên bảo trì trên ứng dụng quản lý nội bộ.
 
-![Luồng Đăng ký Cognito](/images/5-Workshop/5.4-Test_Results_Experimentation/tracker-cognito-auth.png?classes=shadow)
+![Luồng Đăng ký Cognito](/FCAJ-Workshop/images/5-Workshop/5.4-Test_Results_Experimentation/tracker-cognito-auth.png?classes=shadow)
 
 > [!WARNING]
 > Hình ảnh chức năng tạo tài khoản và phân quyền truy cập cho Kỹ thuật viên bảo trì thiết bị
 
 Hệ thống AWS Cognito ghi nhận chính xác kỹ thuật viên mới và tự động gửi thông tin đăng nhập tạm thời về email. Kỹ thuật viên đăng nhập lần đầu, đổi mật khẩu và trạng thái tài khoản trên hệ thống chuyển sang "Confirmed", cấp quyền truy cập vào bảng điều khiển bảo trì.
 
-![Quản trị Người dùng Cognito](/images/5-Workshop/5.4-Test_Results_Experimentation/tracker-cognito-users.png?classes=shadow)
+![Quản trị Người dùng Cognito](/FCAJ-Workshop/images/5-Workshop/5.4-Test_Results_Experimentation/tracker-cognito-users.png?classes=shadow)
 
 > [!WARNING]
 > Giao diện quản lý danh sách Kỹ thuật viên bảo trì và trạng thái xác thực trên AWS Cognito User Pool
@@ -39,7 +39,7 @@ Sau khi nhận được liên kết, module Wi-Fi của ESP32 thực hiện mộ
 
 Truy cập S3 Console, tệp log của thiết bị đã được phân loại tự động vào đúng thư mục ngày tháng với dung lượng chính xác, minh chứng cho việc luồng kết nối bảo mật nội bộ VPC đã hoạt động thành công 100%.
 
-![Tải log lên S3 Thành công](/images/5-Workshop/5.4-Test_Results_Experimentation/tracker-s3-upload.png?classes=shadow)
+![Tải log lên S3 Thành công](/FCAJ-Workshop/images/5-Workshop/5.4-Test_Results_Experimentation/tracker-s3-upload.png?classes=shadow)
 
 > [!WARNING]
 > Hình ảnh tệp nhật ký chẩn đoán phần cứng ESP32 được tải lên an toàn hệ thống S3
@@ -52,7 +52,7 @@ Ngay khi dữ liệu được tiếp nhận, CloudWatch Log Groups lập tức g
 
 Hệ thống lập tức chuyển sang trạng thái ALARM. Trong chưa đầy 30 giây, một email thông báo yêu cầu bảo trì khẩn cấp từ Amazon SNS đã được gửi trực tiếp tới hộp thư quản trị, kèm theo ID của thiết bị đang gặp sự cố. Điều này chứng minh luồng giám sát và tự động phát cảnh báo bảo trì hoạt động hoàn toàn chính xác.
 
-![CloudWatch Alarm Triggered](/images/5-Workshop/5.4-Test_Results_Experimentation/tracker-cloudwatch-alarm.png?classes=shadow)
+![CloudWatch Alarm Triggered](/FCAJ-Workshop/images/5-Workshop/5.4-Test_Results_Experimentation/tracker-cloudwatch-alarm.png?classes=shadow)
 
 > [!WARNING]
 > Cảnh báo khẩn cấp được kích hoạt trên CloudWatch gửi email điều phối bảo trì cho thiết bị lỗi

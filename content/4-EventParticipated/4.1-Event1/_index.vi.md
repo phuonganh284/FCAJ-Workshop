@@ -64,4 +64,4 @@ Buổi Meetup mang lại nhiều kiến thức thực tế và góc nhìn mới 
 
 ### Hình ảnh sự kiện
 
-![Hình ảnh sự kiện](/images/event3.png) 
+![Hình ảnh sự kiện](/FCAJ-Workshop/FCAJ-Workshop/images/event1.png) 

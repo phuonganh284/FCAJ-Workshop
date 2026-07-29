@@ -10,7 +10,7 @@ pre : " <b> 5.1. </b> "
 
 <div style="text-align: center; margin: 20px 0;">
 
-  ![Overall Architecture](/images/5-Workshop/5.1-Introduction/architecture.png?classes=shadow)
+  ![Overall Architecture](/FCAJ-Workshop/images/5-Workshop/5.1-Introduction/architecture.png?classes=shadow)
 
   <div style="font-weight: bold; margin-top: 8px; color: #555;">Figure 1. Overall architecture of the network infrastructure and AWS service integration for the Tracker Maintenance project.</div>
 </div>

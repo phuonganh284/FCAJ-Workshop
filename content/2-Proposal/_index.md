@@ -48,7 +48,7 @@ The entire infrastructure is deployed in the ap-southeast-2 (Sydney) AWS region 
 - **Route 53 & ACM / Private CA:** Manages domain name resolution and secure SSL/TLS communication certificates.
 - **Amazon Bedrock:** Integrates artificial intelligence to support maintenance data analytics.
 
-![System Architecture](/images/AWS_Architecture.png)
+![System Architecture](/FCAJ-Workshop/images/AWS_Architecture.png)
 
 **Main Data Flows:**
 

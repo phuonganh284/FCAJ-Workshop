@@ -21,7 +21,7 @@ The first step is to establish the network infrastructure that separates public-
 
 <div style="text-align:center; margin:20px 0;">
 
-![VPC Resource Map](/images/vpcs.png)
+![VPC Resource Map](/FCAJ-Workshop/images/vpcs.png)
 
 <div style="font-weight:bold; margin-top:8px; color:#555;">Figure 3. Amazon VPC resource map.</div>
 
@@ -42,7 +42,7 @@ Configure the database **Security Group** to:
 
 <div style="text-align:center; margin:20px 0;">
 
-![Amazon RDS Status](/images/rds.png)
+![Amazon RDS Status](/FCAJ-Workshop/images/rds.png)
 
 <div style="font-weight:bold; margin-top:8px; color:#555;">Figure 4. Amazon RDS instance status.</div>
 
@@ -65,7 +65,7 @@ Deploy an **Amazon EC2** instance inside the Public Subnet and:
 
 <div style="text-align:center; margin:20px 0;">
 
-![Amazon EC2 Configuration](/images/ec2.png)
+![Amazon EC2 Configuration](/FCAJ-Workshop/images/ec2.png)
 
 <div style="font-weight:bold; margin-top:8px; color:#555;">Figure 5. Amazon EC2 server configuration.</div>
 
@@ -83,7 +83,7 @@ The Spring Boot application uploads and retrieves files from Amazon S3 using IAM
 
 <div style="text-align:center; margin:20px 0;">
 
-![Amazon S3 Configuration](/images/s3.png)
+![Amazon S3 Configuration](/FCAJ-Workshop/images/s3.png)
 
 <div style="font-weight:bold; margin-top:8px; color:#555;">Figure 6. Amazon S3 bucket configuration.</div>
 
@@ -106,7 +106,7 @@ CloudWatch enables the development team to:
 
 <div style="text-align:center; margin:20px 0;">
 
-![CloudWatch Logs](/images/cloudwatch.png)
+![CloudWatch Logs](/FCAJ-Workshop/images/cloudwatch.png)
 
 <div style="font-weight:bold; margin-top:8px; color:#555;">Figure 7. Amazon CloudWatch log monitoring.</div>
 

@@ -55,4 +55,4 @@ This was one of the most inspiring events I attended during the program. Seeing 
 
 ### Event Photos
 
-*Add event photos here.*
+![Event Photo](/images/event1.png) 

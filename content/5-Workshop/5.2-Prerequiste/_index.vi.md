@@ -1,40 +1,88 @@
 ---
-title: "Các bước chuẩn bị"
-date: 2026-07-26
-weight: 2
-chapter: false
-pre: " <b> 5.2. </b> "
+title : "Điều kiện tiên quyết"
+date : 2026-07-26
+weight : 2
+chapter : false
+pre : " <b> 5.2. </b> "
 ---
 
-### Các bước chuẩn bị
+### Điều kiện tiên quyết
 
-#### Tài khoản và Truy cập (AWS IAM & CLI)
+### Tài khoản AWS và quyền truy cập (AWS IAM & AWS CLI)
 
-Hệ thống yêu cầu một tài khoản AWS đang hoạt động với quyền quản trị viên IAM. Để tuân thủ Nguyên tắc Quyền hạn tối thiểu (Principle of Least Privilege), nhóm phát triển không sử dụng tài khoản Root chính mà thay vào đó tạo một tài khoản nhà phát triển phụ tên là **Tracker-Developer** để cấp quyền và lấy các khóa bảo mật nhằm kết nối từ máy trạm làm việc thông qua các bước sau:
+Hệ thống yêu cầu một tài khoản AWS đang hoạt động. Để tuân thủ **nguyên tắc phân quyền tối thiểu (Principle of Least Privilege)**, dự án sử dụng **IAM User** thay vì tài khoản **Root** trong quá trình phát triển và quản trị hằng ngày. IAM User cũng được sử dụng để tạo thông tin xác thực phục vụ việc kết nối tới AWS thông qua AWS CLI.
 
-- **Bước 1 (Cấu hình trên AWS Console):** Đăng nhập vào AWS Management Console bằng tài khoản quản trị viên và điều hướng đến **IAM (Identity and Access Management)** → **Users (Người dùng)** → chọn người dùng **Tracker-Developer**. Di chuyển đến tab **Security credentials (Thông tin bảo mật)**, tìm đến phần **Access keys (Khóa truy cập)** và chọn **Create access key (Tạo khóa truy cập)**. Chọn **Command Line Interface (CLI)** làm trường hợp sử dụng (use case), đồng ý với các điều khoản và xác nhận để hệ thống tạo cặp khóa: **Access Key ID** và **Secret Access Key**. Tải xuống tệp `.csv` chứa thông tin khóa bảo mật này.
+#### Bước 1: Tạo Access Key
 
-- **Bước 2 (Cấu hình trên máy trạm cục bộ):** Mở Terminal hoặc PowerShell trên máy tính cá nhân và chạy lệnh sau:
+Đăng nhập vào **AWS Management Console** bằng tài khoản IAM và truy cập:
+
+**IAM → Users → Security credentials**
+
+Trong phần **Access keys**, chọn **Create access key**, lựa chọn **Command Line Interface (CLI)** làm mục đích sử dụng, xác nhận các khuyến nghị và hoàn tất quá trình tạo.
+
+AWS sẽ sinh ra:
+
+- **Access Key ID**
+- **Secret Access Key**
+
+Tải xuống tệp **.csv** chứa các thông tin này và lưu trữ ở nơi an toàn.
+
+<div style="text-align: center; margin: 20px 0;">
+
+![IAM Security Credentials](/images/iam.png)
+
+<div style="font-weight: bold; margin-top: 8px; color: #555;">Hình 2. Trang Security credentials của IAM User trong AWS IAM.</div>
+
+</div>
+
+#### Bước 2: Cấu hình AWS CLI
+
+Mở **Terminal** (Linux/macOS) hoặc **PowerShell** (Windows) và chạy lệnh:
 
 ```bash
 aws configure
-````
+```
 
-Nhập **Access Key ID** và **Secret Access Key** đã được tạo ở Bước 1. Thiết lập **Default region name** thành `ap-southeast-1` (Singapore - vùng triển khai lý tưởng để tối ưu hóa độ trễ mạng cho người dùng tại Việt Nam) và **Default output format** thành `json`. Cấu hình này sẽ tự động được lưu trong thư mục người dùng (`~/.aws/` trên Linux/macOS hoặc `%USERPROFILE%\.aws\` trên Windows).
+Sau đó nhập các thông tin sau:
 
-> [!NOTE]
-> Tab **IAM Security credentials** với phần **Access keys** được sử dụng để tạo các khóa kết nối CLI.
+- **AWS Access Key ID**
+- **AWS Secret Access Key**
+- **Default region name:** `ap-southeast-2`
+- **Default output format:** `json`
 
-#### Môi trường Máy trạm Cục bộ và Mã nguồn
+Các tệp cấu hình sẽ được lưu tự động tại:
 
-Đảm bảo máy trạm đã cài đặt thành công môi trường **Node.js** (phiên bản 18 trở lên) và **Python** (phiên bản 3.10 trở lên) để phục vụ cho việc phát triển Backend (FastAPI/Node.js) cũng như đóng gói giao diện Frontend (React/Vue).
+- **Linux/macOS:** `~/.aws/`
+- **Windows:** `%USERPROFILE%\.aws\`
 
-Cài đặt **Git** để quản lý mã nguồn. Cần đặc biệt chú ý kiểm tra cấu hình tệp `.gitignore` chuẩn xác trước khi commit để tránh việc vô tình đẩy các thông tin nhạy cảm (như API keys) lên kho lưu trữ trực tuyến.
+> **Lưu ý:** Mục **IAM → Security credentials → Access keys** được sử dụng để tạo thông tin xác thực cho AWS CLI.
 
-Chuẩn bị sẵn tệp `.env` tại môi trường local chứa các biến môi trường thiết yếu như chuỗi kết nối cơ sở dữ liệu (`DB_URL`) và khóa bí mật mã hóa token (`JWT_SECRET`).
+---
 
-#### Lựa chọn Vùng Cơ sở hạ tầng
+### Môi trường phát triển cục bộ
 
-Lựa chọn vùng cơ sở hạ tầng mạng AWS tại Singapore (`ap-southeast-1`) làm vùng triển khai mặc định. Điều này đảm bảo tốc độ phản hồi (latency) thấp nhất, mang lại trải nghiệm truy cập mượt mà cho hệ thống Tracker Maintenance, đồng thời hỗ trợ đầy đủ các dịch vụ AWS cốt lõi cấu thành nên kiến trúc.
+Để phát triển, biên dịch và triển khai ứng dụng Spring Boot, máy tính cần cài đặt các phần mềm sau:
 
+- **Java Development Kit (JDK) 21** để phát triển ứng dụng.
+- **Maven hoặc Gradle** để quản lý thư viện và biên dịch dự án.
+- **Git** để quản lý mã nguồn và theo dõi phiên bản.
 
+Ngoài ra, cần chuẩn bị các biến môi trường nhằm lưu trữ an toàn các thông tin cấu hình quan trọng như:
+
+- Thông tin kết nối cơ sở dữ liệu.
+- Cấu hình Amazon S3.
+- Cấu hình Amazon CloudWatch.
+
+Các tệp cấu hình chứa thông tin nhạy cảm không nên được đưa lên kho mã nguồn. Cần cấu hình tệp `.gitignore` phù hợp trước khi đẩy mã nguồn lên Git.
+
+---
+
+### Khu vực triển khai AWS
+
+Theo kiến trúc của dự án, toàn bộ tài nguyên AWS được triển khai tại khu vực:
+
+```text
+ap-southeast-2 (Asia Pacific – Sydney)
+```
+
+Việc sử dụng thống nhất một AWS Region giúp các dịch vụ như **Amazon VPC**, **Amazon EC2**, **Amazon RDS**, **Amazon S3** và **Amazon CloudWatch** có thể giao tiếp hiệu quả, giảm độ trễ và tránh các lỗi triển khai do tài nguyên nằm ở nhiều Region khác nhau.

@@ -1,74 +1,81 @@
 ---
-title: "Bản đề xuất"
+title: "Đề xuất"
 date: 2026-07-26
 weight: 2
 chapter: false
 pre: " <b> 2. </b> "
 ---
 
-## Tracker Maintenance – Hệ thống quản lý bảo trì trên nền tảng AWS
-### Giải pháp vận hành an toàn với kiến trúc Cloud Web Đa lớp và xác thực JWT
+## Tracker Maintenance – Hệ thống Quản lý Bảo trì Thiết bị trên AWS
+### Giải pháp vận hành an toàn với Kiến trúc Cloud Multi-tier và Bảo mật nhiều lớp
 
-### 1. Tóm tắt điều hành
-Tracker Maintenance là một hệ thống quản lý các tác vụ bảo trì được xây dựng trên kiến trúc Multi-tier (Đa lớp) hiện đại trên Amazon Web Services (AWS). Từ góc độ kỹ thuật, giao diện người dùng (Frontend) được phát triển bằng React/Vue, trong khi hệ thống xử lý cốt lõi (Backend) được xây dựng bằng Node.js/FastAPI, kết hợp với cơ sở dữ liệu quan hệ bảo mật. Hệ thống tự chủ hoàn toàn trong việc quản lý danh tính thông qua cơ chế JWT Auth. 
+### 1. Tóm tắt dự án
+
+Tracker Maintenance là một ứng dụng đa tầng (Multi-tier) hiện đại được xây dựng nhằm quản lý hoạt động bảo trì thiết bị, triển khai trên nền tảng Amazon Web Services (AWS). Giao diện người dùng (Frontend) được phát triển bằng React, trong khi phần xử lý nghiệp vụ (Backend) được xây dựng bằng Spring Boot (Java 21), tích hợp với cơ sở dữ liệu quan hệ được lưu trữ an toàn trong hạ tầng mạng riêng biệt.
 
 ### 2. Mục tiêu
-Với Tracker Maintenance, mục tiêu cốt lõi tập trung vào việc tối ưu hóa quy trình quản lý và nâng cao tối đa bảo mật hệ thống:
-- Xây dựng hạ tầng Cloud ổn định, tách biệt rõ ràng luồng truy cập Front-end và Back-end.
-- Thay thế các giải pháp xác thực phụ thuộc (như Cognito) bằng hệ thống JWT nội bộ linh hoạt và tự chủ hơn.
-- Triển khai cơ chế bảo vệ chủ động chống lại các cuộc tấn công dò mật khẩu (Brute-force protection).
-- Tối ưu hóa tải máy chủ bằng cách sử dụng luồng tải file trực tiếp lên S3 (Pre-signed URL) và xử lý sự kiện tự động.
 
-### 3. Tuyên bố vấn đề
-- **Tình trạng hiện tại:** Các hệ thống theo dõi truyền thống thường dễ bị tổn thương trước các cuộc tấn công brute-force, cấu hình lộ lọt API Key và thường xuyên gặp hiện tượng nghẽn cổ chai khi xử lý tải file dung lượng lớn thông qua máy chủ chính.
-- **Giải pháp:** Tracker Maintenance tận dụng mạng riêng ảo VPC trên AWS để bảo vệ cơ sở dữ liệu. Hệ thống chuyển đổi sang xác thực JWT, bảo mật nghiêm ngặt cấu hình bằng file `.env` và áp dụng kiến trúc Hướng sự kiện (Event-Driven) với S3 và Lambda để xử lý file.
-- **Lợi ích:** Mang lại một hệ thống có tính sẵn sàng cao, bảo mật chặt chẽ từ lớp mạng đến lớp ứng dụng, đồng thời cung cấp trải nghiệm mượt mà cho người dùng cuối.
+Các mục tiêu chính của dự án Tracker Maintenance tập trung vào việc tối ưu hóa quy trình quản lý và nâng cao tính bảo mật của hệ thống:
+
+- Xây dựng hạ tầng Cloud ổn định với sự phân tách rõ ràng giữa các Public Subnet và Private Subnet.
+- Triển khai máy chủ ứng dụng Spring Boot với mô hình bảo mật nhiều lớp và cơ chế kiểm soát truy cập chặt chẽ.
+- Tối ưu hóa việc xử lý các tệp tin bảo trì và dữ liệu đa phương tiện thông qua Amazon S3 Object Storage.
+- Thiết lập hệ thống giám sát và tập trung nhật ký (Log Aggregation) nhằm đảm bảo khả năng theo dõi và giám sát toàn diện.
+
+### 3. Bài toán
+
+- **Hiện trạng:** Các hệ thống quản lý truyền thống thường gặp khó khăn trong việc kiểm soát quyền truy cập, tiềm ẩn rủi ro về bảo mật dữ liệu và thường xảy ra tình trạng quá tải khi xử lý các tệp tin lớn thông qua máy chủ trung tâm.
+- **Giải pháp:** Tracker Maintenance sử dụng Amazon VPC để cô lập tầng cơ sở dữ liệu. Ứng dụng Backend (Spring Boot) được triển khai an toàn trên Amazon EC2, kết hợp với Amazon S3 để lưu trữ tệp tin và Amazon CloudWatch để giám sát hệ thống.
+- **Lợi ích:** Mang đến một hệ thống có tính sẵn sàng cao, được bảo vệ từ tầng mạng đến tầng ứng dụng, đồng thời cung cấp giao diện quản lý trực quan và trải nghiệm sử dụng mượt mà cho đội ngũ kỹ thuật.
 
 ### 4. Kiến trúc hệ thống
-Toàn bộ cơ sở hạ tầng được triển khai trên AWS trong mạng nội bộ Amazon VPC, được phân chia rành mạch thành Public Subnet (chứa máy chủ EC2) và Private Subnet (chứa cơ sở dữ liệu RDS).
 
-**Công nghệ sử dụng:**
-- **Frontend:** React/Vue (Lưu trữ tĩnh và phân phối qua CDN).
-- **Backend:** Node.js / FastAPI.
-- **Cơ sở dữ liệu:** Amazon RDS (PostgreSQL/MySQL).
+Toàn bộ hạ tầng được triển khai tại khu vực **ap-southeast-2 (Sydney)** với cấu trúc mạng được phân tách rõ ràng.
 
-**Các dịch vụ AWS cốt lõi:**
-- **Amazon EC2:** Máy chủ chính chạy ứng dụng Backend, xử lý logic xác thực JWT và kiểm soát Brute-force.
-- **Amazon S3:** Lưu trữ tĩnh cho Frontend và là kho chứa các tệp tin/hình ảnh tải lên từ người dùng.
-- **Amazon CloudFront & Route 53:** Phân phối nội dung toàn cầu (CDN) và phân giải tên miền tốc độ cao.
-- **AWS Lambda & Amazon SNS:** Xử lý luồng sự kiện tự động (Event-Driven). Khi có file mới trên S3, Lambda sẽ được kích hoạt để xử lý và SNS sẽ gửi thông báo đến kỹ thuật viên.
-- **Amazon CloudWatch:** Dịch vụ giám sát và lưu trữ log tập trung để phát hiện lỗi hệ thống.
+**Các công nghệ sử dụng:**
 
-![Kiến trúc hệ thống](/images/2-Proposal/architecture.png?classes=shadow)
+- **Frontend:** React / Tailwind CSS.
+- **Backend:** Spring Boot (Java 21).
+- **Cơ sở dữ liệu:** Amazon RDS (PostgreSQL).
 
-**Các luồng dữ liệu chính:**
-- **Luồng xác thực bảo mật:** Người dùng gửi yêu cầu đăng nhập. Máy chủ EC2 kiểm tra logic Brute-force (chặn nếu sai quá nhiều lần). Nếu hợp lệ, Backend cấp phát một JWT Token an toàn để người dùng truy cập các API nghiệp vụ.
-- **Luồng tải file tối ưu:** Frontend gọi API đến EC2 để xin cấp quyền. EC2 trả về một S3 Pre-signed URL tạm thời. Frontend sử dụng URL này để tải file trực tiếp lên S3, bỏ qua việc truyền tải nặng nề qua EC2.
-- **Luồng thông báo sự kiện:** Ngay khi file được tải lên S3 thành công (Event Trigger), AWS Lambda sẽ tự động khởi chạy logic xử lý và kích hoạt Amazon SNS để đẩy thông báo theo thời gian thực.
+**Các dịch vụ AWS chính:**
+
+- **Amazon VPC:** Tạo môi trường mạng riêng, được chia thành Public Subnet (triển khai EC2) và Private Subnet (triển khai RDS).
+- **Amazon EC2:** Máy chủ ảo chạy ứng dụng Spring Boot và xử lý toàn bộ nghiệp vụ của hệ thống.
+- **Amazon RDS:** Cơ sở dữ liệu quan hệ lưu trữ thông tin hệ thống và dữ liệu bảo trì.
+- **Amazon S3:** Dịch vụ lưu trữ đối tượng dành cho hình ảnh hệ thống và tài liệu kỹ thuật.
+- **Amazon CloudWatch:** Dịch vụ giám sát tập trung, thu thập nhật ký hoạt động của ứng dụng.
+- **Route 53 & ACM / Private CA:** Quản lý tên miền và chứng chỉ SSL/TLS để đảm bảo kết nối an toàn.
+- **Amazon Bedrock:** Tích hợp trí tuệ nhân tạo nhằm hỗ trợ phân tích dữ liệu bảo trì.
+
+![Kiến trúc hệ thống](/images/AWS_Architecture.png)
+**Luồng dữ liệu chính:**
+
+- **Luồng xử lý nghiệp vụ:** Người dùng gửi yêu cầu thông qua giao diện Frontend, dữ liệu được chuyển đến máy chủ Spring Boot trên Amazon EC2 và truy vấn thông tin từ cơ sở dữ liệu Amazon RDS nằm trong vùng mạng riêng.
+- **Luồng quản lý tệp tin:** Máy chủ Spring Boot xử lý và tương tác trực tiếp với Amazon S3 để lưu trữ và truy xuất tệp tin thông qua quyền truy cập IAM được cấu hình an toàn.
 
 ### 5. Triển khai kỹ thuật
-Nhóm phát triển chia sẻ các nhiệm vụ kỹ thuật để đảm bảo tiến độ dự án:
-- **Xây dựng Front-end & Back-end:** WhooDuck1810 và phuonganh284 phối hợp phát triển giao diện React/Vue, thiết lập môi trường bảo mật `.env` và viết logic API trên Node.js/FastAPI.
-- **Bảo mật Xác thực:** Gỡ bỏ tích hợp AWS Cognito, lập trình và chuyển đổi toàn bộ sang cơ chế xác thực JWT kết hợp tính năng Anti-login protection.
-- **Triển khai Hạ tầng AWS:** Thiết lập kiến trúc mạng VPC, cấu hình S3 Pre-signed URL và luồng sự kiện Lambda - SNS.
+
+Nhóm phát triển phân chia các hạng mục kỹ thuật nhằm đảm bảo tiến độ thực hiện dự án:
+
+- **Phát triển ứng dụng (Frontend & Backend):** Xây dựng giao diện người dùng bằng React và phát triển các API nghiệp vụ bằng Spring Boot.
+- **Triển khai hạ tầng AWS:** Thiết kế kiến trúc mạng VPC, cấu hình Security Group và triển khai các dịch vụ Amazon RDS và Amazon EC2.
+- **Bảo mật và giám sát:** Cấu hình chính sách IAM theo nguyên tắc **Least Privilege** và tích hợp CloudWatch Logs để giám sát hệ thống.
 
 ### 6. Lộ trình triển khai
-Lộ trình triển khai dự án Tracker Maintenance diễn ra trong 8 tuần:
-- **Tuần 1-2:** Tìm hiểu tổng quan kiến trúc Web trên AWS. Khởi tạo repository và cấu trúc mã nguồn.
-- **Tuần 3-4:** Xây dựng khung ứng dụng cơ bản. Thiết lập biến môi trường bảo mật (`.env`), dọn dẹp các API key bị lộ khỏi lịch sử Git.
-- **Tuần 5-6:** Triển khai ứng dụng lên hạ tầng AWS (EC2, S3, CloudFront), tích hợp cơ sở dữ liệu RDS và cấu hình Amplify/Cognito bước đầu.
-- **Tuần 7-8:** Tối ưu hóa xác thực (thay thế Cognito bằng JWT). Triển khai tính năng chống Brute-force, tối ưu hóa UI/UX và hoàn thiện tài liệu hệ thống.
 
-### 7. Ước tính chi phí
-Kiến trúc kết hợp giữa EC2 và các dịch vụ quản lý của AWS giúp tối ưu hóa chi phí:
-- **Amazon EC2 & RDS:** Sử dụng các phiên bản máy chủ nhỏ (t2.micro/t3.micro) nằm trong giới hạn Free Tier cho môi trường phát triển.
-- **Amazon S3 & CloudFront:** Chi phí phân phối nội dung tĩnh và lưu trữ rất thấp, hầu hết được bao phủ bởi gói miễn phí hàng tháng.
-- **AWS Lambda & SNS:** Tính phí dựa trên số lần gọi hàm và số lượng tin nhắn, cực kỳ tiết kiệm cho luồng xử lý sự kiện.
+Lộ trình triển khai dự án được chia thành các giai đoạn tuần tự:
 
-### 8. Đánh giá rủi ro
-- **Rủi ro lộ thông tin nhạy cảm:** Được giải quyết triệt để thông qua việc sử dụng tệp `.env` đồng bộ hóa chặt chẽ và cấu hình `.gitignore` chuẩn.
-- **Tấn công dò mật khẩu (Brute-force):** Được ngăn chặn bằng logic Anti-login protection lập trình trực tiếp tại Backend.
-- **Xâm nhập cơ sở dữ liệu:** Rủi ro rất thấp nhờ thiết kế mạng VPC cô lập hoàn toàn Amazon RDS trong Private Subnet, không cho phép truy cập trực tiếp từ Internet.
+- **Giai đoạn 1:** Khởi tạo mã nguồn, thiết kế cơ sở dữ liệu và xây dựng giao diện mẫu.
+- **Giai đoạn 2:** Phát triển nghiệp vụ Backend bằng Spring Boot và thiết lập kết nối với cơ sở dữ liệu cục bộ.
+- **Giai đoạn 3:** Triển khai hạ tầng AWS (VPC, Subnet, Security Group) và cấu hình Amazon RDS.
+- **Giai đoạn 4:** Triển khai ứng dụng lên Amazon EC2, cấu hình Amazon S3, hoàn thiện hệ thống giám sát bằng CloudWatch và thực hiện kiểm thử tích hợp.
 
-### 9. Kết quả kỳ vọng
-Triển khai thành công hệ thống Tracker Maintenance bảo mật, hoạt động ổn định và tối ưu hiệu năng. Dự án là minh chứng cho khả năng kết hợp nhuần nhuyễn giữa kiến trúc Web đa lớp truyền thống (EC2, RDS) và các tính năng Cloud hiện đại (S3 Pre-signed URL, Event-Driven Lambda), mang lại một công cụ quản lý bảo trì mạnh mẽ và tự chủ hoàn toàn về mặt xác thực.
+### 7. Đánh giá rủi ro
+
+- **Rủi ro truy cập trái phép vào cơ sở dữ liệu:** Được loại bỏ nhờ thiết kế Amazon RDS nằm trong Private Subnet và không cho phép truy cập trực tiếp từ Internet.
+- **Rủi ro rò rỉ thông tin xác thực:** Được giảm thiểu thông qua việc quản lý biến môi trường an toàn và tuân thủ nghiêm ngặt nguyên tắc phân quyền tối thiểu của IAM.
+
+### 8. Kết quả mong đợi
+
+Triển khai thành công hệ thống Tracker Maintenance có tính bảo mật cao, ổn định và hiệu năng tốt trên nền tảng AWS. Dự án thể hiện khả năng thiết kế kiến trúc Multi-tier và ứng dụng hiệu quả các dịch vụ điện toán đám mây hiện đại vào bài toán quản lý bảo trì thiết bị trong thực tế.

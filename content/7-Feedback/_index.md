@@ -17,7 +17,7 @@ The learning environment was well organized and supportive. The learning materia
 The mentor was enthusiastic and always willing to answer questions whenever difficulties arose. Instead of simply providing solutions, the mentor encouraged independent thinking and guided us toward finding solutions ourselves. This approach helped me better understand AWS services and strengthened my problem-solving skills.
 
 **3. Relevance to My Academic Background**  
-The program closely matched my background in Information Technology and allowed me to apply knowledge learned at university to a real cloud project. At the same time, I gained practical experience with many AWS services that I had previously only studied theoretically.
+The program closely matched my background in Computer Science and allowed me to apply knowledge learned at university to a real cloud project. At the same time, I gained practical experience with many AWS services that I had previously only studied theoretically.
 
 **4. Learning and Skill Development Opportunities**  
 The workshop helped me gain hands-on experience with AWS services such as Amazon EC2, Amazon S3, Amazon RDS, Amazon VPC, AWS Lambda, Amazon CloudWatch, and Route 53. Besides improving my cloud computing knowledge, I also developed skills in cloud deployment, Git/GitHub collaboration, technical documentation, troubleshooting, and teamwork.

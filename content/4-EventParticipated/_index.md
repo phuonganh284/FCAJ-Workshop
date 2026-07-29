@@ -20,7 +20,7 @@ During the First Cloud AI Journey program, I participated in several technical m
 ---
 
 ### [Event 2](4.2-Event2/)
-&emsp;**Event Name:** Meetup 13/06/2026
+&emsp;**Event Name:** Career Orientation & AWS Architecture
 
 &emsp;**Date & Time:** 09:00, June 13, 2026
 

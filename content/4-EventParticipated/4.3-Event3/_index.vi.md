@@ -47,12 +47,12 @@ Nhiều đội thi đã trình bày các ứng dụng AI sáng tạo, bao gồm:
 
 ### Khả năng áp dụng
 
-Sự kiện giúp tôi mở rộng hiểu biết về cách các dịch vụ AWS có thể hỗ trợ xây dựng các ứng dụng AI hiện đại. Các dự án được trình bày cũng mang lại cho tôi nhiều ý tưởng mới về việc kết hợp điện toán đám mây với trí tuệ nhân tạo trong các dự án phần mềm trong tương lai.
+Sự kiện giúp em mở rộng hiểu biết về cách các dịch vụ AWS có thể hỗ trợ xây dựng các ứng dụng AI hiện đại. Các dự án được trình bày cũng mang lại cho em nhiều ý tưởng mới về việc kết hợp điện toán đám mây với trí tuệ nhân tạo trong các dự án phần mềm trong tương lai.
 
 ### Cảm nhận sau sự kiện
 
-Đây là một trong những sự kiện truyền cảm hứng nhất mà tôi tham gia trong suốt chương trình. Việc được chứng kiến những dự án thực tế được hoàn thành trong thời gian ngắn cho thấy tầm quan trọng của tinh thần làm việc nhóm, sự sáng tạo và khả năng hiện thực hóa ý tưởng. Sự kiện cũng tạo thêm động lực để tôi tiếp tục học hỏi về các công nghệ AI song song với lĩnh vực Cloud Computing.
+Đây là một trong những sự kiện truyền cảm hứng nhất mà em tham gia trong suốt chương trình. Việc được chứng kiến những dự án thực tế được hoàn thành trong thời gian ngắn cho thấy tầm quan trọng của tinh thần làm việc nhóm, sự sáng tạo và khả năng hiện thực hóa ý tưởng. Sự kiện cũng tạo thêm động lực để em tiếp tục học hỏi về các công nghệ AI song song với lĩnh vực Cloud Computing.
 
 ### Hình ảnh sự kiện
 
-*Thêm hình ảnh sự kiện tại đây.*
+![Hình ảnh sự kiện](/images/event2.png) 

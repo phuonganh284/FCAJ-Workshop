@@ -56,12 +56,12 @@ pre: " <b> 4.1. </b> "
 
 ### Khả năng áp dụng
 
-Những kiến thức thu nhận được từ buổi Meetup giúp tôi hiểu rõ hơn về các công nghệ hiện đại được sử dụng trong các hệ thống Cloud. Đặc biệt, Docker và các giải pháp bảo mật trên AWS là những kiến thức có thể áp dụng trực tiếp vào các dự án triển khai hệ thống trong tương lai.
+Những kiến thức thu nhận được từ buổi Meetup giúp em hiểu rõ hơn về các công nghệ hiện đại được sử dụng trong các hệ thống Cloud. Đặc biệt, Docker và các giải pháp bảo mật trên AWS là những kiến thức có thể áp dụng trực tiếp vào các dự án triển khai hệ thống trong tương lai.
 
 ### Cảm nhận sau sự kiện
 
-Buổi Meetup mang lại nhiều kiến thức thực tế và góc nhìn mới về các công nghệ đang được sử dụng trong doanh nghiệp. Bên cạnh việc học hỏi từ các diễn giả, tôi còn có cơ hội giao lưu với những người cùng định hướng trong lĩnh vực Cloud Computing, từ đó mở rộng hiểu biết và có thêm động lực để tiếp tục học tập.
+Buổi Meetup mang lại nhiều kiến thức thực tế và góc nhìn mới về các công nghệ đang được sử dụng trong doanh nghiệp. Bên cạnh việc học hỏi từ các diễn giả, em còn có cơ hội giao lưu với những người cùng định hướng trong lĩnh vực Cloud Computing, từ đó mở rộng hiểu biết và có thêm động lực để tiếp tục học tập.
 
 ### Hình ảnh sự kiện
 
-*Thêm hình ảnh sự kiện tại đây.*
+![Hình ảnh sự kiện](/images/event3.png) 

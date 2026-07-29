@@ -1,40 +1,88 @@
 ---
-title: "Prerequisite"
-date: 2026-07-26
-weight: 2
-chapter: false
-pre: " <b> 5.2. </b> "
+title : "Prerequisite"
+date : 2026-07-26
+weight : 2
+chapter : false
+pre : " <b> 5.2. </b> "
 ---
 
-### Prerequisite
+### Prerequisites
 
-#### Accounts and Access (AWS IAM & CLI)
+### AWS Account and Access (AWS IAM & AWS CLI)
 
-The system requires an active AWS account with IAM administrator privileges. To comply with the Principle of Least Privilege, the development team does not use the main Root account. Instead, a secondary developer account named **Tracker-Developer** is created to grant permissions and obtain security keys for connecting from the local workstation through the following steps:
+The system requires an active AWS account. To follow the **Principle of Least Privilege**, the project uses an **IAM user account** instead of the AWS Root account for daily administration and development tasks. The IAM user is also used to generate access credentials for connecting to AWS services through the AWS CLI.
 
-- **Step 1 (Configuration on AWS Console):** Log in to the AWS Management Console using the administrator account and navigate to the **IAM (Identity and Access Management)** service → **Users** → select the user **Tracker-Developer**. Go to the **Security credentials** tab, locate the **Access keys** section, and select **Create access key**. Choose **Command Line Interface (CLI)** as the use case, agree to the terms, and confirm to generate the key pair: **Access Key ID** and **Secret Access Key**. Download the `.csv` file containing this security key information.
+#### Step 1: Generate an Access Key
 
-- **Step 2 (Configuration on Local Workstation):** Open Terminal or PowerShell on your personal computer and run the following command:
+Sign in to the **AWS Management Console** using the IAM user account and navigate to:
+
+**IAM → Users → Security credentials**
+
+Under the **Access keys** section, select **Create access key**, choose **Command Line Interface (CLI)** as the use case, acknowledge the recommendations, and complete the creation process.
+
+AWS will generate:
+
+- **Access Key ID**
+- **Secret Access Key**
+
+Download the generated **.csv** file and store it securely.
+
+<div style="text-align: center; margin: 20px 0;">
+
+![IAM Security Credentials](/images/5-Workshop/5.2-Prerequisite/iam-security-credentials.png?classes=shadow)
+
+<div style="font-weight: bold; margin-top: 8px; color: #555;">Figure 2. Security credentials page of the IAM user in AWS IAM.</div>
+
+</div>
+
+#### Step 2: Configure AWS CLI
+
+Open **Terminal** (Linux/macOS) or **PowerShell** (Windows) and execute:
 
 ```bash
 aws configure
-````
+```
 
-Enter the **Access Key ID** and **Secret Access Key** generated in Step 1. Set the **Default region name** to `ap-southeast-1` (Singapore — the ideal deployment region to optimize network latency for users in Vietnam) and the **Default output format** to `json`. This configuration will be automatically saved in the user directory (`~/.aws/` on Linux/macOS or `%USERPROFILE%\.aws\` on Windows).
+Enter the following information:
 
-> [!NOTE]
-> The **IAM Security credentials** tab, with the **Access keys** section, is used to generate CLI connection keys.
+- **AWS Access Key ID**
+- **AWS Secret Access Key**
+- **Default region name:** `ap-southeast-2`
+- **Default output format:** `json`
 
-#### Local Workstation Environment and Source Code
+The configuration files will be stored automatically in:
 
-Ensure the workstation has successfully installed **Node.js** (version 18 or higher) and **Python** (version 3.10 or higher) for backend development (FastAPI/Node.js) and frontend bundling (React/Vue).
+- **Linux/macOS:** `~/.aws/`
+- **Windows:** `%USERPROFILE%\.aws\`
 
-Install **Git** for source code management. Pay special attention to verifying the `.gitignore` file configuration before committing to avoid accidentally pushing sensitive information such as API keys to the remote repository.
+> **Note:** The **IAM → Security credentials → Access keys** page is used to generate authentication credentials for AWS CLI access.
 
-Prepare an `.env` file in the local environment containing essential environment variables such as the database connection string (`DB_URL`) and the token encryption secret (`JWT_SECRET`).
+---
 
-#### Infrastructure Region Selection
+### Local Development Environment
 
-Select the AWS network infrastructure region in Singapore (`ap-southeast-1`) as the default deployment region. This ensures the lowest latency, providing a smooth access experience for the Tracker Maintenance system while fully supporting all the core AWS services that make up the architecture.
+To develop, build, and deploy the Spring Boot application, the local machine should have the following software installed:
 
+- **Java Development Kit (JDK) 21** for application development.
+- **Maven or Gradle** for dependency management and project builds.
+- **Git** for source code management and version control.
 
+The project should also prepare the required environment variables to securely store configuration values, including:
+
+- Database connection information.
+- Amazon S3 configuration.
+- Amazon CloudWatch configuration.
+
+Sensitive configuration files should never be committed to the Git repository. Configure the `.gitignore` file properly before pushing source code.
+
+---
+
+### AWS Region
+
+According to the project architecture, all AWS resources are deployed in the following Region:
+
+```text
+ap-southeast-2 (Asia Pacific – Sydney)
+```
+
+Using a single AWS Region ensures that services such as **Amazon VPC**, **Amazon EC2**, **Amazon RDS**, **Amazon S3**, and **Amazon CloudWatch** can communicate efficiently while minimizing latency and avoiding deployment issues caused by cross-region resources.

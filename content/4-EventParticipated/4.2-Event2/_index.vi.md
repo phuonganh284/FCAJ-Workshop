@@ -61,12 +61,12 @@ pre: " <b> 4.2. </b> "
 
 ### Khả năng áp dụng
 
-Những nội dung được chia sẻ trong buổi Meetup giúp tôi hiểu rõ hơn về các yêu cầu thực tế của doanh nghiệp đối với kỹ sư Cloud và DevOps. Đồng thời, các kiến thức về kiến trúc hệ thống trên AWS cũng là nền tảng hữu ích để áp dụng vào các dự án cá nhân và trong quá trình học tập sau này.
+Những nội dung được chia sẻ trong buổi Meetup giúp em hiểu rõ hơn về các yêu cầu thực tế của doanh nghiệp đối với kỹ sư Cloud và DevOps. Đồng thời, các kiến thức về kiến trúc hệ thống trên AWS cũng là nền tảng hữu ích để áp dụng vào các dự án cá nhân và trong quá trình học tập sau này.
 
 ### Cảm nhận sau sự kiện
 
-Buổi Meetup không chỉ mang đến nhiều kiến thức chuyên môn mà còn giúp tôi có cái nhìn rõ ràng hơn về con đường phát triển nghề nghiệp trong lĩnh vực Cloud Computing. Những chia sẻ từ các diễn giả đã truyền thêm động lực để tôi tiếp tục học hỏi, rèn luyện kỹ năng và theo đuổi lĩnh vực này trong tương lai.
+Buổi Meetup không chỉ mang đến nhiều kiến thức chuyên môn mà còn giúp em có cái nhìn rõ ràng hơn về con đường phát triển nghề nghiệp trong lĩnh vực Cloud Computing. Những chia sẻ từ các diễn giả đã truyền thêm động lực để em tiếp tục học hỏi, rèn luyện kỹ năng và theo đuổi lĩnh vực này trong tương lai.
 
 ### Hình ảnh sự kiện
 
-*Thêm hình ảnh sự kiện tại đây.*
+![Hình ảnh sự kiện](/images/event2.png) 

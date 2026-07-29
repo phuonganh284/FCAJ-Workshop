@@ -1,6 +1,6 @@
 ---
 title : "Introduction"
-date : 2026-07-26 
+date : 2026-07-26
 weight : 1
 chapter : false
 pre : " <b> 5.1. </b> "
@@ -19,13 +19,14 @@ pre : " <b> 5.1. </b> "
 
 ### Overview
 
-This lab documents the complete process of building, configuring, and testing the cloud infrastructure for the Tracker Maintenance System project.
+This lab documents the complete process of building, configuring, and testing the cloud infrastructure for the **Tracker Maintenance System** project.
 
-The configuration focuses on deploying a multi-tier web architecture on AWS, integrating Event-Driven processing, and implementing deep security measures, including:
-* Establishing a Virtual Private Cloud (Amazon VPC) to clearly separate access flows between the Public Subnet (for receiving incoming requests) and the Private Subnet (for isolating and protecting the Amazon RDS database).
-* Deploying the core Backend server on Amazon EC2 (FastAPI/Node.js) to handle business logic, while building an independent JWT authentication token issuance system to optimize access control.
-* Optimizing the delivery of Frontend static content (React/Vue) hosted on Amazon S3 through the Amazon CloudFront content delivery network and Route 53 DNS web service.
-* Building a secure file upload flow using temporary authorization mechanisms (S3 Pre-signed URLs), combined with an Event-Driven architecture using AWS Lambda and Amazon SNS to automatically process images and send notifications to technicians as soon as new data is uploaded.
-* Implementing system protection features against password guessing attacks (Brute-force protection) and centralizing log collection and monitoring through Amazon CloudWatch.
+The deployment focuses on implementing a multi-tier web architecture on AWS in the **ap-southeast-2 (Sydney)** Region with clearly separated network components and secure data processing flows, including:
 
-Through this practical deployment, the Tracker Maintenance system has strictly applied and adhered to the design standards of the AWS Well-Architected Framework, strongly focusing on three core pillars: Security, Performance Efficiency, and Reliability.
+* Establishing an **Amazon Virtual Private Cloud (VPC)** within a single Availability Zone, divided into a **Public Subnet** (to receive Internet traffic) and a **Private Subnet** (to isolate and protect the Amazon RDS database).
+* Deploying the **Spring Boot** backend application on **Amazon EC2** to process business logic and provide RESTful APIs for the frontend application.
+* Connecting the application server to **Amazon RDS (PostgreSQL)** located inside the Private Subnet to ensure secure and reliable database access.
+* Storing maintenance images and technical documents in **Amazon S3**, allowing the application to securely upload, manage, and retrieve files.
+* Managing access permissions through **AWS Identity and Access Management (IAM)** while using **Amazon CloudWatch** to centralize application logs, monitor system performance, and track infrastructure health.
+
+Through this deployment, the **Tracker Maintenance** system provides a secure, reliable, and scalable cloud infrastructure while following AWS best practices for networking, storage, monitoring, and security.

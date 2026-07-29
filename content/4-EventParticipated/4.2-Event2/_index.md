@@ -6,7 +6,7 @@ chapter: false
 pre: " <b> 4.2. </b> "
 ---
 
-# Event Summary: Meetup 13/06/2026
+# Event Summary: Career Orientation & AWS Architecture
 
 ### Event Objectives
 
@@ -69,4 +69,4 @@ The meetup provided valuable insights into both technical topics and career deve
 
 ### Event Photos
 
-*Add event photos here.*
+![Event Photo](/images/event2.png) 

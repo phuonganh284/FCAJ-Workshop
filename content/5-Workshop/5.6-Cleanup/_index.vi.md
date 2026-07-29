@@ -5,16 +5,20 @@ weight : 6
 chapter : false
 pre : " <b> 5.6. </b> "
 ---
-### Khó khăn & Hướng phát triển
+### Khó khăn và hướng phát triển
 
-#### Khó khăn Gặp phải
+### Khó khăn gặp phải
 
-* **Lỗi phân quyền mạng ẩn (ENI)**: Trong giai đoạn đầu đưa hàm Lambda `Process_ESP32_Tracker_Telemetry` vào mạng con Private VPC, hệ thống đã từ chối quyền truy cập mạng. Sau khi tra cứu tài liệu lỗi `CreateNetworkInterface` trên AWS Knowledge Center, tác giả nhận ra hàm thiếu đặc quyền tạo giao diện mạng ảo nội bộ và đã khắc phục bằng cách gắn thêm policy `AWSLambdaVPCAccessExecutionRole` cho IAM Role.
-* **Xung đột chính sách bảo mật (Bucket Policy vs. Endpoint Policy)**: Khi thiết lập bảo mật cho bucket `tracker-maintenance-storage`, việc khóa toàn bộ truy cập public quá sớm—trước khi chỉ định chính xác định danh ARN của VPC Endpoint—đã làm cho chính hàm Lambda nội bộ bị từ chối quyền cấp S3 Presigned URL (Access Denied). Tác giả đã phải lần vết qua CloudWatch logs và dùng AWS CLI để gỡ rối, từ đó điều chỉnh lại trình tự cấu hình.
-* **Xử lý dữ liệu cảm biến không đồng nhất**: Các gói tin (payload) gửi từ mạch ESP32 đôi khi bị gián đoạn hoặc sai định dạng JSON do nhiễu sóng mạng hoặc pin yếu. Điều này ban đầu gây ra lỗi crash cho hệ thống Backend. Tác giả đã phải bổ sung cơ chế kiểm tra tính hợp lệ của dữ liệu đầu vào (data validation) và các khối `try-catch` nghiêm ngặt hơn cho hàm Lambda.
+* **Cấu hình bảo mật mạng và phân quyền nội bộ (Security Groups & IAM):** Trong quá trình thiết lập kết nối bảo mật giữa máy chủ ứng dụng Spring Boot (đặt trong Public Subnet) và cơ sở dữ liệu Amazon RDS (đặt trong Private Subnet), nhóm gặp khó khăn do cấu hình **Inbound Rules** của Security Group chưa chính xác, dẫn đến việc kết nối bị từ chối. Thông qua việc theo dõi nhật ký trên Amazon CloudWatch, nhóm đã xác định nguyên nhân và điều chỉnh cổng kết nối cũng như nguồn truy cập phù hợp.
 
-#### Hướng phát triển Tương lai
+* **Xung đột chính sách bảo mật lưu trữ (Bucket Policy & IAM Roles):** Khi cấu hình bảo mật cho Bucket `tracker-maintenance-images-123`, việc áp dụng chính sách **Public Access Block** quá chặt đã khiến máy chủ Backend phát sinh lỗi **Access Denied** khi ghi dữ liệu lên Amazon S3. Nhóm đã rà soát lại IAM Role và điều chỉnh chính sách phân quyền nhằm tuân thủ nguyên tắc **Principle of Least Privilege** nhưng vẫn đảm bảo hệ thống hoạt động ổn định.
 
-* **Triển khai Hạ tầng dưới dạng mã (IaC)**: Chuyển đổi toàn bộ quy trình thiết lập thủ công trên Web Console (VPC, Subnets, Lambda, Endpoint, IAM, S3) sang dạng mã nguồn quản lý tập trung bằng AWS CloudFormation hoặc Terraform. Điều này giúp dễ dàng nhân bản môi trường để phục vụ hàng ngàn thiết bị IoT chỉ bằng một câu lệnh triển khai.
-* **Tích hợp giao thức MQTT với AWS IoT Core**: Nhằm tối ưu hóa thời lượng pin cho thiết bị ESP32 và đảm bảo kết nối ổn định trong điều kiện mạng yếu, hệ thống dự kiến sẽ chuyển từ việc gọi HTTP REST API (qua API Gateway) sang giao thức MQTT hạng nhẹ chuyên dụng cho IoT thông qua dịch vụ AWS IoT Core.
-* **Xây dựng Dashboard Quản trị Thiết bị (Fleet Management)**: Đồng bộ các chỉ số rời rạc từ CloudWatch Alarms và log hệ thống lên một giao diện giám sát tổng thể. Giao diện này sẽ hiển thị trực quan bản đồ vị trí, dung lượng pin, và cảnh báo lỗi phần cứng của toàn bộ cụm thiết bị tracker, giúp đội ngũ kỹ thuật dễ dàng điều phối công tác bảo trì ngoài thực địa.
+* **Tính nhất quán của dữ liệu và kiểm tra đầu vào:** Dữ liệu gửi từ các yêu cầu tải tệp và thông tin bảo trì đôi khi thiếu tham số hoặc sai cấu trúc do ảnh hưởng của quá trình truyền dữ liệu, gây ra các ngoại lệ trong tầng xử lý nghiệp vụ của Spring Boot. Nhóm đã khắc phục bằng cách áp dụng cơ chế kiểm tra dữ liệu đầu vào (`@Valid`, Bean Validation) kết hợp với **Global Exception Handler** để xử lý lỗi tập trung.
+
+### Hướng phát triển
+
+* **Triển khai hạ tầng dưới dạng mã nguồn (Infrastructure as Code - IaC):** Chuyển toàn bộ quá trình cấu hình thủ công trên AWS Management Console (VPC, Subnets, EC2, RDS, S3, IAM) sang quản lý bằng **Terraform** hoặc **AWS CloudFormation** nhằm chuẩn hóa môi trường triển khai, dễ dàng tái tạo hạ tầng và quản lý phiên bản.
+
+* **Tích hợp trí tuệ nhân tạo nâng cao (Amazon Bedrock):** Mở rộng khả năng phân tích thông minh bằng cách sử dụng các Foundation Models trên Amazon Bedrock để hỗ trợ chẩn đoán lỗi thiết bị dựa trên lịch sử bảo trì và đề xuất phương án xử lý phù hợp cho kỹ thuật viên.
+
+* **Xây dựng bảng điều khiển giám sát tập trung (Fleet Dashboard):** Đồng bộ dữ liệu nhật ký từ Amazon CloudWatch và cơ sở dữ liệu lên một giao diện quản trị tập trung, cung cấp biểu đồ hiệu năng, trạng thái hoạt động của hệ thống và thông tin bảo trì theo thời gian thực, hỗ trợ công tác vận hành và giám sát hiệu quả hơn.

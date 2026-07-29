@@ -17,7 +17,7 @@ Môi trường học tập được tổ chức bài bản và thân thiện. L�
 Mentor luôn nhiệt tình hướng dẫn, giải đáp các thắc mắc và định hướng cách tiếp cận khi em gặp vấn đề. Thay vì đưa ra lời giải ngay, mentor thường gợi ý phương pháp để em tự tìm hiểu và giải quyết, giúp em hiểu sâu hơn về các dịch vụ AWS cũng như nâng cao khả năng tư duy và xử lý vấn đề.
 
 **3. Mức độ phù hợp với chuyên ngành**  
-Nội dung của chương trình phù hợp với chuyên ngành Công nghệ Thông tin mà em đang theo học. Dự án giúp em có cơ hội áp dụng những kiến thức đã học vào thực tế, đồng thời tiếp cận nhiều dịch vụ AWS mà trước đây em chỉ được tìm hiểu ở mức lý thuyết.
+Nội dung của chương trình phù hợp với chuyên ngành Khoa học máy tính mà em đang theo học. Dự án giúp em có cơ hội áp dụng những kiến thức đã học vào thực tế, đồng thời tiếp cận nhiều dịch vụ AWS mà trước đây em chỉ được tìm hiểu ở mức lý thuyết.
 
 **4. Cơ hội học hỏi và phát triển kỹ năng**  
 Thông qua chương trình, em được thực hành với nhiều dịch vụ AWS như Amazon EC2, Amazon S3, Amazon RDS, Amazon VPC, AWS Lambda, Amazon CloudWatch và Route 53. Ngoài kiến thức về Cloud Computing, em còn cải thiện kỹ năng triển khai hệ thống, sử dụng Git/GitHub, viết tài liệu kỹ thuật, xử lý sự cố và làm việc nhóm.
@@ -38,7 +38,7 @@ Nhìn chung, First Cloud AI Journey là một chương trình mang lại nhiều
 
 **Theo bạn, chương trình nên cải thiện điều gì cho các học viên trong tương lai?**
 
-em mong chương trình có thêm các buổi chia sẻ chuyên sâu về những chủ đề nâng cao như bảo mật trên AWS, CI/CD, Container, Docker hoặc Infrastructure as Code. Ngoài ra, việc tổ chức các buổi trình bày dự án và nhận phản hồi từ mentor cũng sẽ giúp học viên học hỏi được nhiều kinh nghiệm hơn.
+Em mong chương trình sẽ có thêm các buổi chia sẻ chuyên sâu về những chủ đề nâng cao như bảo mật trên AWS, CI/CD, Container, Docker hoặc Infrastructure as Code. Ngoài ra, việc tổ chức các buổi trình bày dự án và nhận phản hồi từ mentor cũng sẽ giúp học viên học hỏi được nhiều kinh nghiệm hơn.
 
 **Bạn có sẵn sàng giới thiệu chương trình này cho bạn bè không? Vì sao?**
 

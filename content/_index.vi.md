@@ -15,7 +15,7 @@ chapter: false
 
 &emsp; **Trường:** Đại học Bách Khoa TP.HCM
 
-&emsp; **Ngành:** Computer Science
+&emsp; **Ngành:** Khoa học máy tính
 
 &emsp; **Lớp:** AWS062026
 

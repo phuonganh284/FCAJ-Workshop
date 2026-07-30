@@ -15,11 +15,11 @@ pre: " <b> 1.3. </b> "
 
 | Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
 | --- | --- | --- | --- | --- |
-| 2 | Tạo và quản lý các S3 Bucket | 15/06/2026 | 15/06/2026 | AWS Documentation |
-| 3 | Cấu hình Bucket Policy và quyền truy cập | 16/06/2026 | 16/06/2026 | AWS Documentation |
-| 4 | Tìm hiểu các khái niệm cơ bản về Amazon RDS | 17/06/2026 | 17/06/2026 | AWS Documentation |
-| 5 | Khởi tạo một RDS Database Instance | 18/06/2026 | 18/06/2026 | AWS Documentation |
-| 6 | Kết nối ứng dụng với cơ sở dữ liệu RDS | 19/06/2026 | 20/06/2026 | AWS Documentation |
+| 2 | Tạo và quản lý các S3 Bucket | 15/06/2026 | 15/06/2026 | Amazon S3 User Guide |
+| 3 | Cấu hình Bucket Policy và quyền truy cập | 16/06/2026 | 16/06/2026 | Amazon S3 Access Management Guide |
+| 4 | Tìm hiểu các khái niệm cơ bản về Amazon RDS | 17/06/2026 | 17/06/2026 | Amazon RDS User Guide |
+| 5 | Khởi tạo một RDS Database Instance | 18/06/2026 | 18/06/2026 | Amazon RDS User Guide |
+| 6 | Kết nối ứng dụng với cơ sở dữ liệu RDS | 19/06/2026 | 20/06/2026 | Amazon RDS User Guide |
 
 ### Kết quả đạt được tuần 3:
 

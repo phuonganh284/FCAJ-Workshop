@@ -15,11 +15,11 @@ pre: " <b> 1.1. </b> "
 
 | Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
 | --- | --- | --- | --- | --- |
-| 2 | Tìm hiểu hạ tầng toàn cầu của AWS (Region, Availability Zone, Edge Location) | 01/06/2026 | 01/06/2026 | AWS Skill Builder |
-| 3 | Tìm hiểu các khái niệm về IAM: User, Group, Role và Policy | 02/06/2026 | 02/06/2026 | AWS Documentation |
-| 4 | Thực hành tạo IAM User và Group | 03/06/2026 | 03/06/2026 | AWS Documentation |
-| 5 | Cấu hình xác thực đa yếu tố (MFA) và phân quyền theo nguyên tắc Least Privilege | 04/06/2026 | 04/06/2026 | AWS Documentation |
-| 6 | Kiểm tra phân quyền IAM và xác minh bảo mật tài khoản | 05/06/2026 | 06/06/2026 | AWS Documentation |
+| 2 | Tìm hiểu hạ tầng toàn cầu của AWS (Region, Availability Zone, Edge Location) | 01/06/2026 | 01/06/2026 | AWS Global Infrastructure |
+| 3 | Tìm hiểu các khái niệm về IAM: User, Group, Role và Policy | 02/06/2026 | 02/06/2026 | AWS IAM User Guide |
+| 4 | Thực hành tạo IAM User và Group | 03/06/2026 | 03/06/2026 | AWS IAM User Guide |
+| 5 | Cấu hình xác thực đa yếu tố (MFA) và phân quyền theo nguyên tắc Least Privilege | 04/06/2026 | 04/06/2026 | AWS IAM Best Practices |
+| 6 | Kiểm tra phân quyền IAM và xác minh bảo mật tài khoản | 05/06/2026 | 06/06/2026 | AWS IAM Access Analyzer User Guide |
 
 ### Kết quả đạt được tuần 1:
 

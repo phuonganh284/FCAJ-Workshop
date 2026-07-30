@@ -15,11 +15,11 @@ pre: " <b> 1.1. </b> "
 
 | Day | Task | Start Date | Completion Date | Reference Material |
 | --- | --- | --- | --- | --- |
-| 1 | Learn AWS global infrastructure (Regions, Availability Zones, Edge Locations) | 01/06/2026 | 01/06/2026 | AWS Skill Builder |
-| 2 | Study IAM concepts: Users, Groups, Roles, Policies | 02/06/2026 | 02/06/2026 | AWS Documentation |
-| 3 | Practice creating IAM users and groups | 03/06/2026 | 03/06/2026 | AWS Documentation |
-| 4 | Configure MFA and least-privilege permissions | 04/06/2026 | 04/06/2026 | AWS Documentation |
-| 5 | Test IAM authorization and verify account security | 05/06/2026 | 06/06/2026 | AWS Documentation |
+| 1 | Learn AWS global infrastructure (Regions, Availability Zones, Edge Locations) | 01/06/2026 | 01/06/2026 | AWS Global Infrastructure |
+| 2 | Study IAM concepts: Users, Groups, Roles, Policies | 02/06/2026 | 02/06/2026 | AWS IAM User Guide |
+| 3 | Practice creating IAM users and groups | 03/06/2026 | 03/06/2026 | AWS IAM User Guide |
+| 4 | Configure MFA and least-privilege permissions | 04/06/2026 | 04/06/2026 | AWS IAM Best Practices |
+| 5 | Test IAM authorization and verify account security | 05/06/2026 | 06/06/2026 | AWS IAM Access Analyzer User Guide |
 
 ### Week 1 Achievements:
 

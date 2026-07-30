@@ -15,11 +15,11 @@ pre: " <b> 1.4. </b> "
 
 | Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
 | --- | --- | --- | --- | --- |
-| 2 | Tìm hiểu các khái niệm cơ bản về AWS Lambda | 22/06/2026 | 22/06/2026 | AWS Documentation |
-| 3 | Tạo và triển khai các Lambda Function | 23/06/2026 | 23/06/2026 | AWS Documentation |
-| 4 | Kiểm thử việc thực thi của Lambda Function | 24/06/2026 | 24/06/2026 | AWS Documentation |
-| 5 | Cấu hình các API Endpoint trên Amazon API Gateway | 25/06/2026 | 25/06/2026 | AWS Documentation |
-| 6 | Kết nối API Gateway với Lambda Function | 26/06/2026 | 27/06/2026 | AWS Documentation |
+| 2 | Tìm hiểu các khái niệm cơ bản về AWS Lambda | 22/06/2026 | 22/06/2026 | AWS Lambda Developer Guide |
+| 3 | Tạo và triển khai các Lambda Function | 23/06/2026 | 23/06/2026 | AWS Lambda Developer Guide |
+| 4 | Kiểm thử việc thực thi của Lambda Function | 24/06/2026 | 24/06/2026 | AWS Lambda Developer Guide |
+| 5 | Cấu hình các API Endpoint trên Amazon API Gateway | 25/06/2026 | 25/06/2026 | Amazon API Gateway Developer Guide |
+| 6 | Kết nối API Gateway với Lambda Function | 26/06/2026 | 27/06/2026 | Amazon API Gateway Developer Guide |
 
 ### Kết quả đạt được tuần 4:
 

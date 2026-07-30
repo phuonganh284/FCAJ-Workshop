@@ -16,9 +16,9 @@ pre: " <b> 1.7. </b> "
 | Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
 | --- | --- | --- | --- | --- |
 | 2 | Rà soát và hoàn thiện mục tiêu của dự án | 13/07/2026 | 13/07/2026 | Tài liệu dự án |
-| 3 | Xác định các dịch vụ AWS được sử dụng trong hệ thống | 14/07/2026 | 14/07/2026 | AWS Documentation |
+| 3 | Xác định các dịch vụ AWS được sử dụng trong hệ thống | 14/07/2026 | 14/07/2026 | AWS Architecture Center |
 | 4 | Thiết kế sơ đồ kiến trúc hạ tầng của hệ thống | 15/07/2026 | 15/07/2026 | AWS Architecture Icons |
-| 5 | Kiểm tra mối liên kết giữa các tài nguyên AWS | 16/07/2026 | 16/07/2026 | AWS Documentation |
+| 5 | Kiểm tra mối liên kết giữa các tài nguyên AWS | 16/07/2026 | 16/07/2026 | AWS Architecture Center |
 | 6 | Rà soát và hoàn thiện thiết kế tổng thể của dự án | 17/07/2026 | 18/07/2026 | Thảo luận với nhóm |
 
 ### Kết quả đạt được tuần 7:

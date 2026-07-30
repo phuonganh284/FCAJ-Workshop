@@ -15,11 +15,11 @@ pre: " <b> 1.4. </b> "
 
 | Day | Task | Start Date | Completion Date | Reference Material |
 | --- | --- | --- | --- | --- |
-| 1 | Learn AWS Lambda concepts | 22/06/2026 | 22/06/2026 | AWS Documentation |
-| 2 | Create Lambda functions | 23/06/2026 | 23/06/2026 | AWS Documentation |
-| 3 | Test Lambda execution | 24/06/2026 | 24/06/2026 | AWS Documentation |
-| 4 | Configure API Gateway endpoints | 25/06/2026 | 25/06/2026 | AWS Documentation |
-| 5 | Connect API Gateway with Lambda | 26/06/2026 | 27/06/2026 | AWS Documentation |
+| 1 | Learn AWS Lambda concepts | 22/06/2026 | 22/06/2026 | AWS Lambda Developer Guide |
+| 2 | Create Lambda functions | 23/06/2026 | 23/06/2026 | AWS Lambda Developer Guide |
+| 3 | Test Lambda execution | 24/06/2026 | 24/06/2026 | AWS Lambda Developer Guide |
+| 4 | Configure API Gateway endpoints | 25/06/2026 | 25/06/2026 | Amazon API Gateway Developer Guide |
+| 5 | Connect API Gateway with Lambda | 26/06/2026 | 27/06/2026 | Amazon API Gateway Developer Guide |
 
 ### Week 4 Achievements:
 

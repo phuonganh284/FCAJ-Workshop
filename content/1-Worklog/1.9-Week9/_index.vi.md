@@ -15,8 +15,8 @@ pre: " <b> 1.9. </b> "
 
 | Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
 | --- | --- | --- | --- | --- |
-| 2 | Rà soát cấu hình IAM và các chính sách bảo mật | 27/07/2026 | 27/07/2026 | AWS Documentation |
-| 3 | Kiểm tra cấu hình bảo mật mạng | 28/07/2026 | 28/07/2026 | AWS Documentation |
+| 2 | Rà soát cấu hình IAM và các chính sách bảo mật | 27/07/2026 | 27/07/2026 | AWS IAM Best Practices |
+| 3 | Kiểm tra cấu hình bảo mật mạng | 28/07/2026 | 28/07/2026 | Amazon VPC Security Groups for Your VPC |
 | 4 | Thực hiện kiểm thử cuối cùng cho hệ thống | 29/07/2026 | 29/07/2026 | Tài liệu dự án |
 | 5 | Hoàn thiện tài liệu và báo cáo dự án | 30/07/2026 | 30/07/2026 | Tài liệu dự án |
 | 6 | Nộp báo cáo tổng kết workshop | 31/07/2026 | 31/07/2026 | Hướng dẫn Workshop |

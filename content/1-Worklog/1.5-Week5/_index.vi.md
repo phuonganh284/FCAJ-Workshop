@@ -15,11 +15,11 @@ pre: " <b> 1.5. </b> "
 
 | Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
 | --- | --- | --- | --- | --- |
-| 2 | Tìm hiểu các khái niệm về Amazon DynamoDB | 29/06/2026 | 29/06/2026 | AWS Documentation |
-| 3 | Thiết kế cấu trúc bảng dữ liệu | 30/06/2026 | 30/06/2026 | AWS Documentation |
-| 4 | Thực hiện các thao tác CRUD trên DynamoDB | 01/07/2026 | 01/07/2026 | AWS Documentation |
-| 5 | Tìm hiểu Hosted Zone và cơ chế hoạt động của Amazon Route 53 | 02/07/2026 | 02/07/2026 | AWS Documentation |
-| 6 | Cấu hình các bản ghi DNS | 03/07/2026 | 04/07/2026 | AWS Documentation |
+| 2 | Tìm hiểu các khái niệm về Amazon DynamoDB | 29/06/2026 | 29/06/2026 | Amazon DynamoDB Developer Guide |
+| 3 | Thiết kế cấu trúc bảng dữ liệu | 30/06/2026 | 30/06/2026 | Amazon DynamoDB Developer Guide |
+| 4 | Thực hiện các thao tác CRUD trên DynamoDB | 01/07/2026 | 01/07/2026 | Amazon DynamoDB Developer Guide |
+| 5 | Tìm hiểu Hosted Zone và cơ chế hoạt động của Amazon Route 53 | 02/07/2026 | 02/07/2026 | Amazon Route 53 Developer Guide |
+| 6 | Cấu hình các bản ghi DNS | 03/07/2026 | 04/07/2026 | Amazon Route 53 Developer Guide |
 
 ### Kết quả đạt được tuần 5:
 

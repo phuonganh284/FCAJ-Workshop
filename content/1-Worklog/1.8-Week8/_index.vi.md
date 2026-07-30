@@ -15,10 +15,10 @@ pre: " <b> 1.8. </b> "
 
 | Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
 | --- | --- | --- | --- | --- |
-| 2 | Triển khai dịch vụ Backend | 20/07/2026 | 20/07/2026 | AWS Documentation |
-| 3 | Triển khai ứng dụng Frontend | 21/07/2026 | 21/07/2026 | AWS Documentation |
-| 4 | Cấu hình quy trình CI/CD | 22/07/2026 | 22/07/2026 | AWS Documentation |
-| 5 | Kiểm thử quy trình triển khai tự động | 23/07/2026 | 23/07/2026 | AWS Documentation |
+| 2 | Triển khai dịch vụ Backend | 20/07/2026 | 20/07/2026 | AWS Elastic Beanstalk Developer Guide |
+| 3 | Triển khai ứng dụng Frontend | 21/07/2026 | 21/07/2026 | Amazon S3 User Guide |
+| 4 | Cấu hình quy trình CI/CD | 22/07/2026 | 22/07/2026 | AWS CodePipeline User Guide |
+| 5 | Kiểm thử quy trình triển khai tự động | 23/07/2026 | 23/07/2026 | AWS CodePipeline User Guide |
 | 6 | Kiểm tra hoạt động của toàn bộ hệ thống | 24/07/2026 | 25/07/2026 | Tài liệu dự án |
 
 ### Kết quả đạt được tuần 8:

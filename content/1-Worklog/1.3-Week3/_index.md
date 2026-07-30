@@ -15,11 +15,11 @@ pre: " <b> 1.3. </b> "
 
 | Day | Task | Start Date | Completion Date | Reference Material |
 | --- | --- | --- | --- | --- |
-| 1 | Create and manage S3 buckets | 15/06/2026 | 15/06/2026 | AWS Documentation |
-| 2 | Configure bucket policies and permissions | 16/06/2026 | 16/06/2026 | AWS Documentation |
-| 3 | Learn Amazon RDS fundamentals | 17/06/2026 | 17/06/2026 | AWS Documentation |
-| 4 | Launch an RDS database instance | 18/06/2026 | 18/06/2026 | AWS Documentation |
-| 5 | Connect an application to RDS | 19/06/2026 | 20/06/2026 | AWS Documentation |
+| 1 | Create and manage S3 buckets | 15/06/2026 | 15/06/2026 | Amazon S3 User Guide |
+| 2 | Configure bucket policies and permissions | 16/06/2026 | 16/06/2026 | Amazon S3 Access Management Guide |
+| 3 | Learn Amazon RDS fundamentals | 17/06/2026 | 17/06/2026 | Amazon RDS User Guide |
+| 4 | Launch an RDS database instance | 18/06/2026 | 18/06/2026 | Amazon RDS User Guide |
+| 5 | Connect an application to RDS | 19/06/2026 | 20/06/2026 | Amazon RDS User Guide |
 
 ### Week 3 Achievements:
 

@@ -15,8 +15,8 @@ pre: " <b> 1.9. </b> "
 
 | Day | Task | Start Date | Completion Date | Reference Material |
 | --- | --- | --- | --- | --- |
-| 1 | Review IAM and security configurations | 27/07/2026 | 27/07/2026 | AWS Documentation |
-| 2 | Verify network security | 28/07/2026 | 28/07/2026 | AWS Documentation |
+| 1 | Review IAM and security configurations | 27/07/2026 | 27/07/2026 | AWS IAM Best Practices |
+| 2 | Verify network security | 28/07/2026 | 28/07/2026 | Amazon VPC Security Groups for Your VPC |
 | 3 | Perform final application testing | 29/07/2026 | 29/07/2026 | Project Documentation |
 | 4 | Complete project documentation | 30/07/2026 | 30/07/2026 | Project Documentation |
 | 5 | Submit the final report | 31/07/2026 | 31/07/2026 | Workshop Guidelines |

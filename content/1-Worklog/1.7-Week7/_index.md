@@ -16,9 +16,9 @@ pre: " <b> 1.7. </b> "
 | Day | Task | Start Date | Completion Date | Reference Material |
 | --- | --- | --- | --- | --- |
 | 1 | Review project objectives | 13/07/2026 | 13/07/2026 | Project Documentation |
-| 2 | Identify AWS services used | 14/07/2026 | 14/07/2026 | AWS Documentation |
+| 2 | Identify AWS services used | 14/07/2026 | 14/07/2026 | AWS Architecture Center |
 | 3 | Design the infrastructure architecture diagram | 15/07/2026 | 15/07/2026 | AWS Architecture Icons |
-| 4 | Validate resource connections | 16/07/2026 | 16/07/2026 | AWS Documentation |
+| 4 | Validate resource connections | 16/07/2026 | 16/07/2026 | AWS Architecture Center |
 | 5 | Review and refine the project design | 17/07/2026 | 18/07/2026 | Team Discussion |
 
 ### Week 7 Achievements:

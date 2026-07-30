@@ -15,11 +15,11 @@ pre: " <b> 1.6. </b> "
 
 | Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
 | --- | --- | --- | --- | --- |
-| 2 | Tìm hiểu CloudWatch Metrics và CloudWatch Logs | 06/07/2026 | 06/07/2026 | AWS Documentation |
-| 3 | Cấu hình CloudWatch Alarm và thông báo | 07/07/2026 | 07/07/2026 | AWS Documentation |
-| 4 | Tìm hiểu cấu trúc và cú pháp của CloudFormation Template | 08/07/2026 | 08/07/2026 | AWS Documentation |
-| 5 | Tạo và triển khai CloudFormation Stack | 09/07/2026 | 09/07/2026 | AWS Documentation |
-| 6 | Kiểm tra quá trình tự động khởi tạo tài nguyên | 10/07/2026 | 11/07/2026 | AWS Documentation |
+| 2 | Tìm hiểu CloudWatch Metrics và CloudWatch Logs | 06/07/2026 | 06/07/2026 | Amazon CloudWatch User Guide |
+| 3 | Cấu hình CloudWatch Alarm và thông báo | 07/07/2026 | 07/07/2026 | Amazon CloudWatch User Guide |
+| 4 | Tìm hiểu cấu trúc và cú pháp của CloudFormation Template | 08/07/2026 | 08/07/2026 | AWS CloudFormation User Guide |
+| 5 | Tạo và triển khai CloudFormation Stack | 09/07/2026 | 09/07/2026 | AWS CloudFormation User Guide |
+| 6 | Kiểm tra quá trình tự động khởi tạo tài nguyên | 10/07/2026 | 11/07/2026 | AWS CloudFormation User Guide |
 
 ### Kết quả đạt được tuần 6:
 

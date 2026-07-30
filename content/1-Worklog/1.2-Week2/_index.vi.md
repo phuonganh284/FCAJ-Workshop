@@ -15,11 +15,11 @@ pre: " <b> 1.2. </b> "
 
 | Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
 | --- | --- | --- | --- | --- |
-| 2 | Tìm hiểu kiến trúc mạng và các thành phần của Amazon VPC | 08/06/2026 | 08/06/2026 | AWS Documentation |
-| 3 | Cấu hình Subnet, Route Table và Internet Gateway | 09/06/2026 | 09/06/2026 | AWS Documentation |
-| 4 | Cấu hình Security Group và Network ACL | 10/06/2026 | 10/06/2026 | AWS Documentation |
-| 5 | Khởi tạo một EC2 Instance | 11/06/2026 | 11/06/2026 | AWS Documentation |
-| 6 | Triển khai website mẫu lên EC2 | 12/06/2026 | 13/06/2026 | AWS Documentation |
+| 2 | Tìm hiểu kiến trúc mạng và các thành phần của Amazon VPC | 08/06/2026 | 08/06/2026 | Amazon VPC User Guide |
+| 3 | Cấu hình Subnet, Route Table và Internet Gateway | 09/06/2026 | 09/06/2026 | Amazon VPC User Guide |
+| 4 | Cấu hình Security Group và Network ACL | 10/06/2026 | 10/06/2026 | Amazon VPC Security Groups for Your VPC |
+| 5 | Khởi tạo một EC2 Instance | 11/06/2026 | 11/06/2026 | Amazon EC2 User Guide |
+| 6 | Triển khai website mẫu lên EC2 | 12/06/2026 | 13/06/2026 | Amazon EC2 User Guide |
 
 ### Kết quả đạt được tuần 2:
 

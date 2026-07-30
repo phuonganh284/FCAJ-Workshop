@@ -15,11 +15,11 @@ pre: " <b> 1.5. </b> "
 
 | Day | Task | Start Date | Completion Date | Reference Material |
 | --- | --- | --- | --- | --- |
-| 1 | Study DynamoDB concepts | 29/06/2026 | 29/06/2026 | AWS Documentation |
-| 2 | Design table schema | 30/06/2026 | 30/06/2026 | AWS Documentation |
-| 3 | Perform CRUD operations | 01/07/2026 | 01/07/2026 | AWS Documentation |
-| 4 | Learn Route 53 hosted zones | 02/07/2026 | 02/07/2026 | AWS Documentation |
-| 5 | Configure DNS records | 03/07/2026 | 04/07/2026 | AWS Documentation |
+| 1 | Study DynamoDB concepts | 29/06/2026 | 29/06/2026 | Amazon DynamoDB Developer Guide |
+| 2 | Design table schema | 30/06/2026 | 30/06/2026 | Amazon DynamoDB Developer Guide |
+| 3 | Perform CRUD operations | 01/07/2026 | 01/07/2026 | Amazon DynamoDB Developer Guide |
+| 4 | Learn Route 53 hosted zones | 02/07/2026 | 02/07/2026 | Amazon Route 53 Developer Guide |
+| 5 | Configure DNS records | 03/07/2026 | 04/07/2026 | Amazon Route 53 Developer Guide |
 
 ### Week 5 Achievements:
 

@@ -15,10 +15,10 @@ pre: " <b> 1.8. </b> "
 
 | Day | Task | Start Date | Completion Date | Reference Material |
 | --- | --- | --- | --- | --- |
-| 1 | Deploy backend services | 20/07/2026 | 20/07/2026 | AWS Documentation |
-| 2 | Deploy frontend application | 21/07/2026 | 21/07/2026 | AWS Documentation |
-| 3 | Configure CI/CD workflow | 22/07/2026 | 22/07/2026 | AWS Documentation |
-| 4 | Test automated deployment pipeline | 23/07/2026 | 23/07/2026 | AWS Documentation |
+| 1 | Deploy backend services | 20/07/2026 | 20/07/2026 | AWS Elastic Beanstalk Developer Guide |
+| 2 | Deploy frontend application | 21/07/2026 | 21/07/2026 | Amazon S3 User Guide |
+| 3 | Configure CI/CD workflow | 22/07/2026 | 22/07/2026 | AWS CodePipeline User Guide |
+| 4 | Test automated deployment pipeline | 23/07/2026 | 23/07/2026 | AWS CodePipeline User Guide |
 | 5 | Validate application functionality | 24/07/2026 | 25/07/2026 | Project Documentation |
 
 ### Week 8 Achievements:

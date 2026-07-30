@@ -55,7 +55,7 @@ Trong bước này, bạn sẽ khởi tạo một cơ sở dữ liệu quan hệ
 
 <div style="text-align: center; margin: 20px 0;">
 
-  ![RDS Database Summary](/images/5-Workshop/5.3-S3-vpc/5.3.4-rds-database/rds-summary.png?classes=shadow)
+  ![RDS Database Summary](/FCAJ-Workshop/images/5-Workshop/5.3-S3-vpc/5.3.4-rds-database/rds-summary.png?classes=shadow)
 
   <div style="font-weight: bold; margin-top: 8px; color: #555;">Hình 5.3.5. Tổng quan cơ sở dữ liệu Amazon RDS PostgreSQL trên AWS Console.</div>
 </div>

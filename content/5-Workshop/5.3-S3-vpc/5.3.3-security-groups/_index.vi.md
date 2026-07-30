@@ -45,7 +45,7 @@ Trong bước này, bạn sẽ cấu hình 02 tường lửa ảo (Security Grou
 
 <div style="text-align: center; margin: 20px 0;">
 
-  ![Security Groups Rules](/images/5-Workshop/5.3-S3-vpc/5.3.3-security-groups/security-groups-rules.png?classes=shadow)
+  ![Security Groups Rules](/FCAJ-Workshop/images/5-Workshop/5.3-S3-vpc/5.3.3-security-groups/security-groups-rules.png?classes=shadow)
 
   <div style="font-weight: bold; margin-top: 8px; color: #555;">Hình 5.3.4. Chi tiết Inbound và Outbound Rules của Security Group trên AWS Console.</div>
 </div>

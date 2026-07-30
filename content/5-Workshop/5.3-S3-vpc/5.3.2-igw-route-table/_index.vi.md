@@ -31,7 +31,7 @@ Trong bước này, bạn sẽ mở kết nối Internet cho dải Public Subnet
 
 <div style="text-align: center; margin: 20px 0;">
 
-  ![Cấu hình Internet Gateway](/images/5-Workshop/5.3-S3-vpc/5.3.2-igw-route-table/igw-setup.png?classes=shadow)
+  ![Cấu hình Internet Gateway](/FCAJ-Workshop/images/5-Workshop/5.3-S3-vpc/5.3.2-igw-route-table/igw-setup.png?classes=shadow)
 
   <div style="font-weight: bold; margin-top: 8px; color: #555;">Hình 5.3.3. Chi tiết Internet Gateway (Tracker-VPC-igw) trạng thái Attached thành công vào Tracker-VPC-vpc.</div>
 </div>

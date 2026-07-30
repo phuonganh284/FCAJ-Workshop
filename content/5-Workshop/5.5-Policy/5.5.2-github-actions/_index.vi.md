@@ -100,7 +100,7 @@ jobs:
 
 <div style="text-align: center; margin: 20px 0;">
 
-  ![Lịch sử chạy GitHub Actions](/images/5-Workshop/5.5-Policy/5.5.2-github-actions/github-actions-runs.png?classes=shadow)
+  ![Lịch sử chạy GitHub Actions](/FCAJ-Workshop/images/5-Workshop/5.5-Policy/5.5.2-github-actions/github-actions-runs.png?classes=shadow)
 
   <div style="font-weight: bold; margin-top: 8px; color: #555;">Hình 5.5.2. Nhật ký chạy thành công các luồng tự động hóa Deploy to EC2 trên GitHub Actions.</div>
 </div>

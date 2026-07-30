@@ -51,7 +51,7 @@ Trong bước này, bạn sẽ tạo Amazon S3 Bucket để lưu trữ ảnh thi
 
 <div style="text-align: center; margin: 20px 0;">
 
-  ![S3 Bucket Policy](/images/5-Workshop/5.4-S3-onprem/5.4.1-s3-bucket/s3-policy.png?classes=shadow)
+  ![S3 Bucket Policy](/FCAJ-Workshop/images/5-Workshop/5.4-S3-onprem/5.4.1-s3-bucket/s3-policy.png?classes=shadow)
 
   <div style="font-weight: bold; margin-top: 8px; color: #555;">Hình 5.4.1. Cấu hình quyền S3 Bucket bao gồm Block Public Access Off và chính sách đọc công khai Bucket Policy.</div>
 </div>

@@ -37,7 +37,7 @@ In this step, map your custom domain (purchased externally) to AWS Route 53 and 
 
 <div style="text-align: center; margin: 20px 0;">
 
-  ![Route 53 Records](/images/5-Workshop/5.6-Cleanup/5.6.1-route53-acm/route53-records.png?classes=shadow)
+  ![Route 53 Records](/FCAJ-Workshop/images/5-Workshop/5.6-Cleanup/5.6.1-route53-acm/route53-records.png?classes=shadow)
 
   <div style="font-weight: bold; margin-top: 8px; color: #555;">Figure 5.6.1. Route 53 Hosted Zone records for trackermaint.dpdns.org showing A Record, NS, SOA, and CNAME validation.</div>
 </div>
@@ -56,7 +56,7 @@ In this step, map your custom domain (purchased externally) to AWS Route 53 and 
 
 <div style="text-align: center; margin: 20px 0;">
 
-  ![ACM Certificate Status](/images/5-Workshop/5.6-Cleanup/5.6.1-route53-acm/acm-certificate.png?classes=shadow)
+  ![ACM Certificate Status](/FCAJ-Workshop/images/5-Workshop/5.6-Cleanup/5.6.1-route53-acm/acm-certificate.png?classes=shadow)
 
   <div style="font-weight: bold; margin-top: 8px; color: #555;">Figure 5.6.2. AWS Certificate Manager (ACM) dashboard displaying Issued status for trackermaint.dpdns.org.</div>
 </div>

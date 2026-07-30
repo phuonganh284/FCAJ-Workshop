@@ -55,4 +55,4 @@ This was one of the most inspiring events I attended during the program. Seeing 
 
 ### Event Photos
 
-<img src="/FCAJ-Workshop/images/event1.png" alt="event" width="500" />
+<img src="/FCAJ-Workshop/images/event1.png" alt="event" width="400" />

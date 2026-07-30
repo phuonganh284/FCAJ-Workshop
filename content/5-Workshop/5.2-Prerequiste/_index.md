@@ -1,87 +1,62 @@
 ---
-title : "Prerequisite"
-date : 2026-07-26
-weight : 2
-chapter : false
-pre : " <b> 5.2. </b> "
+title: "Prerequisite"
+date: 2026-07-30
+weight: 2
+chapter: false
+pre: " <b> 5.2. </b> "
 ---
 
-### Prerequisites
+# 5.2. Prerequisite
 
-### AWS Account and Access (AWS IAM & AWS CLI)
+Before beginning the deployment of the Tracker Maintenance System on AWS, prepare the local developer workstation and IAM access credentials.
 
-The system requires an active AWS account. To follow the **Principle of Least Privilege**, the project uses an **IAM user account** instead of the AWS Root account for daily administration and development tasks. The IAM user is also used to generate access credentials for connecting to AWS services through the AWS CLI.
+---
 
-#### Step 1: Generate an Access Key
+### Step 5.2.1: Workstation & Local Environment Preparation
 
-Sign in to the **AWS Management Console** using the IAM user account and navigate to:
+1. **Install JDK 21 (Corretto or Temurin)** and **Node.js v20 LTS** on your developer workstation.
+2. **Install Docker Desktop & Git** for local testing and source code version control.
+3. Prepare local `.env` variables and ensure sensitive credentials (`AWS_ACCESS_KEY_ID`, `JWT_SECRET`, database passwords) are added to `.gitignore`.
 
-**IAM → Users → Security credentials**
+---
 
-Under the **Access keys** section, select **Create access key**, choose **Command Line Interface (CLI)** as the use case, acknowledge the recommendations, and complete the creation process.
+### Step 5.2.2: Create Unified IAM User (`tracker-s3-uploader-2`)
 
-AWS will generate:
+To enable programmatic media uploads from the Spring Boot backend to Amazon S3 as well as Docker image pushes to Amazon ECR via GitHub Actions, create a single unified IAM User (`tracker-s3-uploader-2`):
 
-- **Access Key ID**
-- **Secret Access Key**
-
-Download the generated **.csv** file and store it securely.
+1. Navigate to the **AWS IAM Console** => **Users** => Click **Create user**.
+2. Set the username to `tracker-s3-uploader-2`.
+3. Under **Permissions options**, choose **Attach policies directly**.
+4. Attach the following 2 AWS managed policies:
+   - `AmazonEC2ContainerRegistryFullAccess` (For ECR Docker image pushing)
+   - `AmazonS3FullAccess` (For media photo upload and retrieval)
+5. Confirm creation, then navigate to **Security credentials** => **Create access key** => Choose **Command Line Interface (CLI)**.
+6. Copy and save the generated **Access Key ID** and **Secret Access Key** securely into your `.env` and GitHub Secrets.
 
 <div style="text-align: center; margin: 20px 0;">
 
-<img src="/FCAJ-Workshop/images/iam.png" alt="iam" width="1000" />
-<div style="font-weight: bold; margin-top: 8px; color: #555;">Figure 2. Security credentials page of the IAM user in AWS IAM.</div>
+  ![IAM User Setup](/images/5-Workshop/5.2-Prerequisite/iam-user-setup.png?classes=shadow)
 
+  <div style="font-weight: bold; margin-top: 8px; color: #555;">Figure 5.2.1. Unified IAM User (tracker-s3-uploader-2) with attached AmazonEC2ContainerRegistryFullAccess and AmazonS3FullAccess policies.</div>
 </div>
 
-#### Step 2: Configure AWS CLI
+---
 
-Open **Terminal** (Linux/macOS) or **PowerShell** (Windows) and execute:
+### Step 5.2.3: Create IAM Role for EC2 Virtual Server
 
-```bash
-aws configure
-```
+To grant the EC2 instance permission to pull Docker images from Amazon ECR and push logs to CloudWatch without storing static credentials on the server:
 
-Enter the following information:
-
-- **AWS Access Key ID**
-- **AWS Secret Access Key**
-- **Default region name:** `ap-southeast-2`
-- **Default output format:** `json`
-
-The configuration files will be stored automatically in:
-
-- **Linux/macOS:** `~/.aws/`
-- **Windows:** `%USERPROFILE%\.aws\`
-
-> **Note:** The **IAM → Security credentials → Access keys** page is used to generate authentication credentials for AWS CLI access.
+1. Navigate to **IAM Console** => **Roles** => Click **Create role**.
+2. Select **AWS Service** as the trusted entity type, and choose **EC2** as the use case.
+3. Attach the following two AWS managed policies:
+   - `AmazonEC2ContainerRegistryReadOnly`
+   - `CloudWatchAgentServerPolicy`
+4. Name the role `tracker-ec2-role` and click **Create role**.
 
 ---
 
-### Local Development Environment
+### Step 5.2.4: Why Use IAM User (`tracker-s3-uploader-2`) Instead of the Root Account or `admin1`?
 
-To develop, build, and deploy the Spring Boot application, the local machine should have the following software installed:
-
-- **Java Development Kit (JDK) 21** for application development.
-- **Maven or Gradle** for dependency management and project builds.
-- **Git** for source code management and version control.
-
-The project should also prepare the required environment variables to securely store configuration values, including:
-
-- Database connection information.
-- Amazon S3 configuration.
-- Amazon CloudWatch configuration.
-
-Sensitive configuration files should never be committed to the Git repository. Configure the `.gitignore` file properly before pushing source code.
-
----
-
-### AWS Region
-
-According to the project architecture, all AWS resources are deployed in the following Region:
-
-```text
-ap-southeast-2 (Asia Pacific – Sydney)
-```
-
-Using a single AWS Region ensures that services such as **Amazon VPC**, **Amazon EC2**, **Amazon RDS**, **Amazon S3**, and **Amazon CloudWatch** can communicate efficiently while minimizing latency and avoiding deployment issues caused by cross-region resources.
+- **Principle of Least Privilege (PoLP):** Isolates S3 uploading and deployment permissions specifically to `tracker-s3-uploader-2` rather than exposing full administrative permissions (`admin1` / Root).
+- **Security Isolation:** If an application credential is ever compromised, the blast radius is strictly limited to S3/ECR operations, protecting overall AWS account administration.
+- **Auditability & Compliance:** AWS CloudTrail logs every API action with the exact `tracker-s3-uploader-2` identity.

@@ -1,18 +1,16 @@
 ---
-title : "Clean up"
-date : 2024-01-01
-weight : 5
-chapter : false
-pre : " <b> 5.5. </b> "
+title: "Compute & Automated CI/CD Deployment"
+date: 2026-07-30
+weight: 5
+chapter: false
+pre: " <b> 5.5. </b> "
 ---
-### Resource Cleanup and Decommissioning
 
-Following the successful completion of the deployment, testing, and evaluation phases for the maintenance management system, all cloud infrastructure resources were systematically decommissioned and cleaned up in accordance with standard operational procedures to optimize costs and eliminate unexpected billing risks on the AWS account.
+# 5.5. Compute & Automated CI/CD Deployment
 
-* **Storage Sanitization and Repository Deletion (Amazon S3):** Performed a complete purge of all experimental data files, images, and maintenance documents stored within the S3 Bucket (`tracker-maintenance-images-123`), followed by the deletion of the bucket configuration to thoroughly clear the object storage space.
+In this section, provision the Amazon EC2 virtual server with an Elastic IP and configure the automated GitHub Actions CI/CD deployment pipeline to AWS.
 
-* **Server Termination and Privilege Revocation (EC2 & IAM):** Executed the termination of the Amazon EC2 virtual server instance to release computational resources, while revoking and deleting the IAM Roles and security policies previously provisioned under the Principle of Least Privilege.
+### Content Steps
 
-* **Database and Network Infrastructure Teardown (RDS & VPC):** Deleted the Amazon RDS relational database instance (`tracker-maintenance-db`) to secure sensitive structured data, subsequently detaching the Internet Gateway, clearing routing tables, and deleting the Tracker-VPC configuration to restore the network environment to its original state.
-
-* **Monitoring Configuration Purge (Amazon CloudWatch):** Erased the CloudWatch Log Groups that recorded the runtime activity logs of the Spring Boot application, finalizing the complete decommissioning and retrieval of the experimental cloud infrastructure ecosystem.
+1. [5.5.1 Provision EC2 Instance & Elastic IP](5.5.1-ec2-instance/)
+2. [5.5.2 Configure GitHub Secrets & CI/CD Pipeline](5.5.2-github-actions/)

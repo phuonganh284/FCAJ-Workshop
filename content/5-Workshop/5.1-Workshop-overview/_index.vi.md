@@ -10,7 +10,7 @@ pre : " <b> 5.1. </b> "
 
 <div style="text-align: center; margin: 20px 0;">
 
-  ![Kiến trúc tổng thể](/FCAJ-Workshop/images/AWS_Architecture.png)
+  <img src="/FCAJ-Workshop/images/AWS_Architecture.png" alt="architecture" width="1000" />
 
   <div style="font-weight: bold; margin-top: 8px; color: #555;">Hình 1. Kiến trúc tổng thể của hạ tầng mạng và sự tích hợp các dịch vụ AWS trong dự án Tracker Maintenance.</div>
 </div>

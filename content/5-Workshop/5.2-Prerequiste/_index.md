@@ -29,8 +29,7 @@ Download the generated **.csv** file and store it securely.
 
 <div style="text-align: center; margin: 20px 0;">
 
-![IAM Security Credentials](/FCAJ-Workshop/images/iam.png)
-
+<img src="/FCAJ-Workshop/images/iam.png" alt="iam" width="1000" />
 <div style="font-weight: bold; margin-top: 8px; color: #555;">Figure 2. Security credentials page of the IAM user in AWS IAM.</div>
 
 </div>

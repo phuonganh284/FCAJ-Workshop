@@ -38,7 +38,7 @@ Trong bước này, bạn sẽ tạo các kho lưu trữ Docker Registry riêng 
 
 <div style="text-align: center; margin: 20px 0;">
 
-  ![ECR Repositories](/images/5-Workshop/5.4-S3-onprem/5.4.2-ecr-replication/ecr-repositories.png?classes=shadow)
+  ![ECR Repositories](/FCAJ-Workshop/images/5-Workshop/5.4-S3-onprem/5.4.2-ecr-replication/ecr-repositories.png?classes=shadow)
 
   <div style="font-weight: bold; margin-top: 8px; color: #555;">Hình 5.4.2. Danh sách Amazon ECR Private Repositories bao gồm tracker-be và tracker-fe.</div>
 </div>

@@ -63,14 +63,14 @@ Trong bước này, bạn sẽ khởi tạo một mạng riêng ảo cách ly (`
 
 <div style="text-align: center; margin: 20px 0;">
 
-  ![Sơ đồ tài nguyên VPC](/images/5-Workshop/5.3-S3-vpc/5.3.1-vpc-subnets/vpc-resource-map.png?classes=shadow)
+  ![Sơ đồ tài nguyên VPC](/FCAJ-Workshop/images/5-Workshop/5.3-S3-vpc/5.3.1-vpc-subnets/vpc-resource-map.png?classes=shadow)
 
   <div style="font-weight: bold; margin-top: 8px; color: #555;">Hình 5.3.1. Sơ đồ tài nguyên (Resource Map) của Tracker-VPC-vpc hiển thị liên kết giữa VPC, Subnet, Bảng tuyến đường và Internet Gateway.</div>
 </div>
 
 <div style="text-align: center; margin: 20px 0;">
 
-  ![Danh sách Subnet](/images/5-Workshop/5.3-S3-vpc/5.3.1-vpc-subnets/subnets-list.png?classes=shadow)
+  ![Danh sách Subnet](/FCAJ-Workshop/images/5-Workshop/5.3-S3-vpc/5.3.1-vpc-subnets/subnets-list.png?classes=shadow)
 
   <div style="font-weight: bold; margin-top: 8px; color: #555;">Hình 5.3.2. Danh sách Subnet công khai và riêng tư được khởi tạo trong Tracker-VPC-vpc.</div>
 </div>

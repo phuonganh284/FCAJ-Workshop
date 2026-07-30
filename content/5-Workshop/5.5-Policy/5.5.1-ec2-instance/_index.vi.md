@@ -44,7 +44,7 @@ Trong bước này, bạn sẽ khởi tạo máy chủ ảo Amazon EC2 (`tracker
 
 <div style="text-align: center; margin: 20px 0;">
 
-  ![EC2 Instance Summary](/images/5-Workshop/5.5-Policy/5.5.1-ec2-instance/ec2-summary.png?classes=shadow)
+  ![EC2 Instance Summary](/FCAJ-Workshop/images/5-Workshop/5.5-Policy/5.5.1-ec2-instance/ec2-summary.png?classes=shadow)
 
   <div style="font-weight: bold; margin-top: 8px; color: #555;">Hình 5.5.1. Chi tiết máy chủ EC2 (tracker-maintenance-server) trạng thái Running kèm Elastic IP trên AWS Console.</div>
 </div>

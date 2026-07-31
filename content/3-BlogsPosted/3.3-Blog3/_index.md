@@ -93,7 +93,6 @@ https://aws.amazon.com/blogs/machine-learning/run-minimax-models-on-amazon-bedro
 
 <div style="text-align: center; margin: 20px 0;">
   <img src="blog3.png" alt="AWS AI Gateway Pattern" style="max-width: 100%; box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); border-radius: 4px;" />
-  <div style="font-weight: bold; margin-top: 8px; color: #555;">AWS AI Gateway Pattern</div>
 </div>
 
 ## Published Post

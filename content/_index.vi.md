@@ -17,7 +17,7 @@ chapter: false
 
 &emsp; **Ngành:** Khoa học máy tính
 
-&emsp; **Lớp:** AWS062026
+&emsp; **Lớp:** CC23KHM1
 
 &emsp; **Công ty thực tập:** Công ty TNHH Amazon Web Services Viet Nam
 

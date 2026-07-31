@@ -80,7 +80,7 @@ Mô hình AI Gateway cân bằng tốt giữa developer experience và enterpris
   https://github.com/aws-samples/amazon-api-gateway-ai-gateway-pattern
 
 <div style="text-align: center; margin: 20px 0;">
-  <img src="/fcaj-workshop/3-blogsposted/3.1-blog1/blog1.png" alt="Blog 1" style="max-width: 100%; box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); border-radius: 4px;" />
+  <img src="blog1.png" alt="AWS AI Gateway Pattern" style="max-width: 100%; box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); border-radius: 4px;" />
   <div style="font-weight: bold; margin-top: 8px; color: #555;">AWS AI Gateway Pattern</div>
 </div>
 

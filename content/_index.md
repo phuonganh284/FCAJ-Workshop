@@ -15,11 +15,11 @@ chapter: false
 
 &emsp; **Email:** anh.nguyenhoang78@hcmut.edu.vn
 
-&emsp; **University:** Ho Chi Minh City University of Technology
+&emsp; **University:** Ho Chi Minh City University of Technology (HCMUT)
 
 &emsp; **Major:** Computer Science
 
-&emsp; **Class:** AWS062026
+&emsp; **Class:** CC23KHM1
 
 &emsp; **Internship Company:** Amazon Web Services Viet Nam Company Limited
 

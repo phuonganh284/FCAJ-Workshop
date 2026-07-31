@@ -71,9 +71,7 @@ Tuy asset tạo ra chưa thể dùng ngay cho các dự án AAA đòi hỏi tố
 * **TripoSG Repository:** https://github.com/VAST-AI-Research/TripoSG
 * **MV-Adapter Repository:** https://github.com/huanngzh/MV-Adapter
 
-<div style="text-align: center; margin: 20px 0;">
-  <img src="blog2.png" alt="AWS AI Gateway Pattern" style="max-width: 100%; box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); border-radius: 4px;" />
-</div>
+![Blog 2](blog2.png)
 
 ## Đường dẫn bài viết
 [https://www.facebook.com/groups/awsstudygroupfcj/posts/2229283721169921](https://www.facebook.com/groups/awsstudygroupfcj/posts/2229283721169921)

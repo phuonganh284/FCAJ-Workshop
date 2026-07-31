@@ -5,7 +5,7 @@ weight: 3
 chapter: false
 pre: " <b> 3. </b> "
 ---
-Trang này liệt kê và giới thiệu các bài blog chúng em đã đăng trên [AWS Study Group](https://www.facebook.com/groups/awsstudygroupfcj).
+Trang này liệt kê và giới thiệu các bài blog chúng tôi đã đăng trên [AWS Study Group](https://www.facebook.com/groups/awsstudygroupfcj).
 
 ### [Blog 1 - Quản lý và kiểm soát truy cập Amazon Bedrock tập trung với mô hình AI Gateway trên AWS](3.1-Blog1/)
 Khi triển khai Generative AI trong doanh nghiệp, bài toán Governance (Quản trị) luôn là thử thách lớn về phân quyền, kiểm soát chi phí và giới hạn lưu lượng. Kiến trúc AI Gateway giúp giải quyết vấn đề này bằng cách quản lý tập trung toàn bộ truy cập vào Amazon Bedrock thông qua sự kết hợp của các dịch vụ Serverless quen thuộc.

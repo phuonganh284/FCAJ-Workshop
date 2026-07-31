@@ -79,9 +79,7 @@ Mô hình AI Gateway cân bằng tốt giữa developer experience và enterpris
 * **GitHub Repository:**
   https://github.com/aws-samples/amazon-api-gateway-ai-gateway-pattern
 
-<div style="text-align: center; margin: 20px 0;">
-  <img src="/FCAJ-workshop/3-blogsposted/3.1-blog1/blog1.png" alt="Blog 1" style="max-width: 100%; box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); border-radius: 4px;" />
-</div>
+![Blog 1](blog1.png)
 
 ## Đường dẫn bài viết
 [https://www.facebook.com/groups/awsstudygroupfcj/posts/2226894971408796/](https://www.facebook.com/groups/awsstudygroupfcj/posts/2226894971408796/)
